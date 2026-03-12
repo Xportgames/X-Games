@@ -81,6 +81,16 @@ const games = [
         rating: 4.9,
         weight: "113.4 GB",
         image: "images/the-last-of-us-2.jpg"
+    },
+    {
+        id: 11,
+        title: "Cyberpunk 2077",
+        description: "Explora Night City en este épico juego de mundo abierto futurista. Vive una aventura cyberpunk llena de acción, misterio y decisiones que cambian tu destino.",
+        category: "futurista",
+        emoji: "🤖",
+        rating: 4.7,
+        weight: "53.8 GB",
+        image: "images/cyberpunk-2077.jpg"
     }
 ];
 
