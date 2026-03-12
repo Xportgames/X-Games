@@ -104,6 +104,17 @@ const games = [
         weight: "62.2 GB",
         image: "images/resident-evil-7.png",
         downloadUrl: "https://gofile.io/d/sOFTi3"
+    },
+    {
+        id: 13,
+        title: "Dragon Ball: Sparking! ZERO",
+        description: "Vive intensas batallas de lucha en el universo de Dragon Ball. Domina poderosos ataques, transforma tus personajes y derrota a tus rivales en este juego de pelea competitivo.",
+        category: "pelea",
+        emoji: "🤗",
+        rating: 4.9,
+        weight: "27.3 GB",
+        image: "images/dragon-ball-sparking-zero.png",
+        downloadUrl: "https://gofile.io/d/g7jtXk"
     }
 ];
 
