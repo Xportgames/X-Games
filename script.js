@@ -71,6 +71,16 @@ const games = [
         category: "puzzles",
         emoji: "🧠",
         rating: 4.6
+    },
+    {
+        id: 10,
+        title: "The Last of Us II Remastered",
+        description: "Sobrevive en un mundo post-apocalíptico lleno de zombies. Mundo abierto épico con gráficos impresionantes.",
+        category: "aventura",
+        emoji: "🧟",
+        rating: 4.9,
+        weight: "113.4 GB",
+        image: "images/the-last-of-us-2.jpg"
     }
 ];
 
@@ -105,14 +115,20 @@ function renderGames(gamesToRender) {
 function createGameCard(game) {
     const card = document.createElement('div');
     card.className = 'game-card';
+    
+    const imageContent = game.image 
+        ? `<img src="${game.image}" alt="${game.title}" class="w-full h-40 object-cover rounded-t-lg">` 
+        : `<div class="game-card-image"><span style="font-size: 4rem;">${game.emoji}</span></div>`;
+    
+    const weightInfo = game.weight ? `<p class="text-xs text-gray-500 mt-1">Peso: ${game.weight}</p>` : '';
+    
     card.innerHTML = `
-        <div class="game-card-image">
-            <span style="font-size: 4rem;">${game.emoji}</span>
-        </div>
+        ${imageContent}
         <div class="game-card-content">
             <h3 class="game-card-title">${game.title}</h3>
             <p class="game-card-description">${game.description}</p>
-            <div class="flex justify-between items-center mb-3">
+            ${weightInfo}
+            <div class="flex justify-between items-center mb-3 mt-3">
                 <span class="text-sm text-gray-400">⭐ ${game.rating}</span>
                 <span class="text-xs bg-purple-600 bg-opacity-50 px-2 py-1 rounded">${game.category}</span>
             </div>
