@@ -1,0 +1,202 @@
+// Base de datos de juegos de ejemplo
+const games = [
+    {
+        id: 1,
+        title: "Space Runner",
+        description: "Vuela a través del espacio evitando asteroides",
+        category: "accion",
+        emoji: "🚀",
+        rating: 4.8
+    },
+    {
+        id: 2,
+        title: "Puzzle Master",
+        description: "Resuelve desafiantes acertijos lógicos",
+        category: "puzzles",
+        emoji: "🧩",
+        rating: 4.6
+    },
+    {
+        id: 3,
+        title: "Speed Racer",
+        description: "Compite en emocionantes carreras de velocidad",
+        category: "carreras",
+        emoji: "🏎️",
+        rating: 4.7
+    },
+    {
+        id: 4,
+        title: "Quest Adventure",
+        description: "Embárcate en una épica aventura de fantasía",
+        category: "aventura",
+        emoji: "⚔️",
+        rating: 4.9
+    },
+    {
+        id: 5,
+        title: "Flappy Bird Clone",
+        description: "El clásico juego de plataformas",
+        category: "accion",
+        emoji: "🐦",
+        rating: 4.5
+    },
+    {
+        id: 6,
+        title: "Sudoku Challenge",
+        description: "Desafía tu mente con Sudoku",
+        category: "puzzles",
+        emoji: "🔢",
+        rating: 4.4
+    },
+    {
+        id: 7,
+        title: "Drift Kings",
+        description: "Domina el arte del drift en la ciudad",
+        category: "carreras",
+        emoji: "🏁",
+        rating: 4.8
+    },
+    {
+        id: 8,
+        title: "Treasure Hunt",
+        description: "Busca tesoros escondidos en islas misteriosas",
+        category: "aventura",
+        emoji: "💎",
+        rating: 4.7
+    },
+    {
+        id: 9,
+        title: "Memory Game",
+        description: "Prueba tu memoria con este clásico",
+        category: "puzzles",
+        emoji: "🧠",
+        rating: 4.6
+    }
+];
+
+// Elementos del DOM
+const gameGrid = document.getElementById('gameGrid');
+const searchInput = document.getElementById('searchInput');
+const menuBtn = document.getElementById('menuBtn');
+
+// Inicializar la página
+document.addEventListener('DOMContentLoaded', () => {
+    renderGames(games);
+    setupEventListeners();
+});
+
+// Renderizar juegos
+function renderGames(gamesToRender) {
+    gameGrid.innerHTML = '';
+    
+    if (gamesToRender.length === 0) {
+        gameGrid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-gray-400 text-lg">No se encontraron juegos.</p></div>';
+        return;
+    }
+    
+    gamesToRender.forEach((game, index) => {
+        const gameCard = createGameCard(game);
+        gameCard.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s both`;
+        gameGrid.appendChild(gameCard);
+    });
+}
+
+// Crear tarjeta de juego
+function createGameCard(game) {
+    const card = document.createElement('div');
+    card.className = 'game-card';
+    card.innerHTML = `
+        <div class="game-card-image">
+            <span style="font-size: 4rem;">${game.emoji}</span>
+        </div>
+        <div class="game-card-content">
+            <h3 class="game-card-title">${game.title}</h3>
+            <p class="game-card-description">${game.description}</p>
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-400">⭐ ${game.rating}</span>
+                <span class="text-xs bg-purple-600 bg-opacity-50 px-2 py-1 rounded">${game.category}</span>
+            </div>
+            <button class="game-card-button" onclick="playGame('${game.title}')">
+                Jugar Ahora
+            </button>
+        </div>
+    `;
+    return card;
+}
+
+// Función para jugar (placeholder)
+function playGame(gameName) {
+    alert(`¡Iniciando ${gameName}!\n\nEsta es una demostración. En la versión completa, el juego se cargaría aquí.`);
+}
+
+// Configurar event listeners
+function setupEventListeners() {
+    // Búsqueda
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const filtered = games.filter(game => 
+            game.title.toLowerCase().includes(searchTerm) ||
+            game.description.toLowerCase().includes(searchTerm)
+        );
+        renderGames(filtered);
+    });
+    
+    // Menú móvil
+    menuBtn.addEventListener('click', toggleMobileMenu);
+    
+    // Filtrar por categoría
+    document.querySelectorAll('[data-category]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const category = e.currentTarget.dataset.category;
+            const filtered = games.filter(game => game.category === category);
+            renderGames(filtered);
+        });
+    });
+}
+
+// Toggle menú móvil
+function toggleMobileMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('mobile-menu-open');
+}
+
+// Smooth scroll para enlaces
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Agregar efecto de scroll en header
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 10) {
+        nav.classList.add('shadow-lg');
+    } else {
+        nav.classList.remove('shadow-lg');
+    }
+});
+
+// Cargar más juegos (simulado)
+function loadMoreGames() {
+    console.log('Cargando más juegos...');
+    // Aquí irían más juegos
+}
+
+// Función para filtrar por categoría
+function filterByCategory(category) {
+    if (category === 'all') {
+        renderGames(games);
+    } else {
+        const filtered = games.filter(game => game.category === category);
+        renderGames(filtered);
+    }
+}
+
+// Exportar funciones para uso global
+window.playGame = playGame;
+window.filterByCategory = filterByCategory;
