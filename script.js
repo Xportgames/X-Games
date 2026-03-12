@@ -6,7 +6,8 @@ const games = [
         description: "Vuela a través del espacio evitando asteroides",
         category: "accion",
         emoji: "🚀",
-        rating: 4.8
+        rating: 4.8,
+        downloadUrl: "https://example.com/download/space-runner"
     },
     {
         id: 2,
@@ -80,7 +81,8 @@ const games = [
         emoji: "🧟",
         rating: 4.9,
         weight: "113.4 GB",
-        image: "images/the-last-of-us-2.jpg"
+        image: "images/the-last-of-us-2.jpg",
+        downloadUrl: "https://example.com/download/the-last-of-us-2"
     },
     {
         id: 11,
@@ -90,7 +92,8 @@ const games = [
         emoji: "🤖",
         rating: 4.7,
         weight: "53.8 GB",
-        image: "images/cyberpunk-2077.jpg"
+        image: "images/cyberpunk-2077.jpg",
+        downloadUrl: "https://example.com/download/cyberpunk-2077"
     }
 ];
 
@@ -132,6 +135,12 @@ function createGameCard(game) {
     
     const weightInfo = game.weight ? `<p class="text-xs text-gray-500 mt-1">Peso: ${game.weight}</p>` : '';
     
+    const downloadLink = game.downloadUrl ? `href="${game.downloadUrl}" target="_blank"` : 'onclick="downloadGame(\'${game.title}\')"';
+    const buttonTag = game.downloadUrl ? 'a' : 'button';
+    const buttonAttrs = game.downloadUrl 
+        ? `href="${game.downloadUrl}" target="_blank" class="game-card-button" style="display: inline-block; text-decoration: none; text-align: center;"` 
+        : `class="game-card-button" onclick="downloadGame(\'${game.title}\')"`;
+    
     card.innerHTML = `
         ${imageContent}
         <div class="game-card-content">
@@ -142,17 +151,17 @@ function createGameCard(game) {
                 <span class="text-sm text-gray-400">⭐ ${game.rating}</span>
                 <span class="text-xs bg-purple-600 bg-opacity-50 px-2 py-1 rounded">${game.category}</span>
             </div>
-            <button class="game-card-button" onclick="playGame('${game.title}')">
-                Jugar Ahora
-            </button>
+            <${buttonTag} ${buttonAttrs}>
+                Descargar
+            </${buttonTag}>
         </div>
     `;
     return card;
 }
 
-// Función para jugar (placeholder)
-function playGame(gameName) {
-    alert(`¡Iniciando ${gameName}!\n\nEsta es una demostración. En la versión completa, el juego se cargaría aquí.`);
+// Función para descargar (placeholder)
+function downloadGame(gameName) {
+    alert(`¡Descargando ${gameName}!\n\nPor favor, configura tu enlace de descarga personalizado en el código para este juego.`);
 }
 
 // Configurar event listeners
