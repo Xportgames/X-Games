@@ -6,8 +6,7 @@ const games = [
         description: "Vuela a través del espacio evitando asteroides",
         category: "accion",
         emoji: "🚀",
-        rating: 4.8,
-        downloadUrl: "https://example.com/download/space-runner"
+        rating: 4.8
     },
     {
         id: 2,
@@ -172,7 +171,7 @@ function createGameCard(game) {
 
 // Función para descargar (placeholder)
 function downloadGame(gameName) {
-    alert(`¡Descargando ${gameName}!\n\nPor favor, configura tu enlace de descarga personalizado en el código para este juego.`);
+    alert(`Enlace de descarga para ${gameName} próximamente.\n\nEste juego estará disponible para descargar en breve.`);
 }
 
 // Configurar event listeners
