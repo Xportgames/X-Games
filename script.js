@@ -94,6 +94,17 @@ const games = [
         weight: "53.8 GB",
         image: "images/cyberpunk-2077.jpg",
         downloadUrl: "https://gofile.io/d/InslV8"
+    },
+    {
+        id: 12,
+        title: "Resident Evil 7: Biohazard",
+        description: "Sumérgete en un aterrador juego de horror donde la supervivencia es tu único objetivo. Enfrenta horrores indescriptibles en una mansión llena de misterios y peligros.",
+        category: "terror",
+        emoji: "💩",
+        rating: 4.8,
+        weight: "62.2 GB",
+        image: "images/resident-evil-7.png",
+        downloadUrl: "https://gofile.io/d/sOFTi3"
     }
 ];
 
