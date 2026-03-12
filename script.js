@@ -82,7 +82,7 @@ const games = [
         rating: 4.9,
         weight: "113.4 GB",
         image: "images/the-last-of-us-2.jpg",
-        downloadUrl: "https://example.com/download/the-last-of-us-2"
+        downloadUrl: "https://gofile.io/d/fKm2WB"
     },
     {
         id: 11,
@@ -93,7 +93,7 @@ const games = [
         rating: 4.7,
         weight: "53.8 GB",
         image: "images/cyberpunk-2077.jpg",
-        downloadUrl: "https://example.com/download/cyberpunk-2077"
+        downloadUrl: "https://gofile.io/d/InslV8"
     }
 ];
 
