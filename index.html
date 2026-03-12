@@ -33,25 +33,39 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="relative overflow-hidden py-20 bg-gradient-to-b from-gray-800 to-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
-                    Bienvenido a X-PortGame 2.0
-                </h1>
-                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Disfruta de cientos de juegos gratis, sin anuncios intrusivos y sin virus. 
-                    Una experiencia de juego pura y segura.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button class="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105">
-                        Explorar Juegos
-                    </button>
-                    <button class="border border-purple-500 hover:bg-purple-500 hover:bg-opacity-10 px-8 py-3 rounded-lg font-semibold transition">
-                        Más Información
-                    </button>
-                </div>
+    <!-- Hero Section with Video Background -->
+    <section id="inicio" class="relative overflow-hidden py-20 min-h-screen flex items-center justify-center">
+        <!-- Video de fondo -->
+        <div class="absolute inset-0 z-0">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                <source src="https://videos.pexels.com/video-files/3571937/3571937-sd_640_360_24fps.mp4" type="video/mp4">
+                <source src="https://cdn.pixabay.com/vimeo/242386/topographic-background-9842.mp4" type="video/mp4">
+            </video>
+            <!-- Overlay oscuro para mejorar legibilidad -->
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <!-- Título animado con letras que se mueven -->
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 h-24 flex items-center justify-center">
+                <span class="animated-title">X-PortGame 2.0</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed font-semibold">
+                🎮 <span class="text-purple-400">Juegos de PC</span> • 🧟 <span class="text-red-400">Zombies</span> • 🌍 <span class="text-green-400">Mundo Abierto</span>
+            </p>
+            
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Disfruta de cientos de juegos gratis, sin anuncios intrusivos y sin virus. 
+                <br><span class="text-yellow-300 font-bold">¿PC de bajos recursos? ¡No hay problema!</span> Contamos con juegos optimizados para cualquier configuración.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 shadow-lg">
+                    Explorar Juegos
+                </button>
+                <button class="border border-purple-500 hover:bg-purple-500 hover:bg-opacity-10 px-8 py-3 rounded-lg font-semibold transition shadow-lg">
+                    Más Información
+                </button>
             </div>
         </div>
     </section>
