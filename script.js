@@ -115,6 +115,18 @@ const games = [
         weight: "27.3 GB",
         image: "images/dragon-ball-sparking-zero.png",
         downloadUrl: "https://gofile.io/d/g7jtXk"
+    },
+    {
+        id: 14,
+        title: "Resident Evil Village (RE8)",
+        description: "Enfrenta horrores en primera persona en este juego de terror inmersivo. Explora un pueblo misterioso lleno de peligros y resuelve acertijos para sobrevivir a la noche mas aterradora.",
+        category: "terror",
+        emoji: "💩",
+        rating: 4.8,
+        weight: "79.2 GB",
+        image: "images/resident-evil-9.jpg",
+        downloadUrl: "https://gofile.io/d/MgwxvP",
+        tutorialUrl: "https://youtu.be/kwuB2DtSlKU?si=PQfr7MEiKLkj9L01"
     }
 ];
 
