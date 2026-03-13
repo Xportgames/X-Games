@@ -291,3 +291,28 @@ video {
 #inicio button:hover {
     box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
 }
+
+
+/* Botones Neón Blanco - Estilo X-PortGames */
+.btn-download {
+    background: transparent !important;
+    color: #ffffff !important; /* Texto Blanco Puro */
+    border: 2px solid #ffffff !important; /* Borde Blanco Puro */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Brillo Neón Blanco (capas para intensidad) */
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, inset 0 0 5px #ffffff;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-download:hover {
+    background: #ffffff !important; /* Relleno Blanco al pasar el mouse */
+    color: #000000 !important;   /* Texto Negro para contraste */
+    /* Brillo mucho más fuerte al pasar el mouse */
+    box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff;
+}
