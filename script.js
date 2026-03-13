@@ -127,6 +127,17 @@ const games = [
         image: "images/resident-evil-9.jpg",
         downloadUrl: "https://gofile.io/d/MgwxvP",
         tutorialUrl: "https://youtu.be/kwuB2DtSlKU?si=PQfr7MEiKLkj9L01"
+    },
+    {
+        id: 15,
+        title: "Days Gone",
+        description: "Sobrevive en un mundo post-apocaliptico infestado de zombies. Monta tu motocicleta, explora vastos paisajes y lucha contra hordas de criaturas en este juego de supervivencia y aventura.",
+        category: "supervivencia",
+        emoji: "💫",
+        rating: 4.7,
+        weight: "62.4 GB",
+        image: "images/days-gone.png",
+        downloadUrl: "https://gofile.io/d/q1cKfc"
     }
 ];
 
