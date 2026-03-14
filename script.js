@@ -160,6 +160,17 @@ const games = [
         weight: "46.7 GB",
         image: "images/the-last-of-us-1-new.jpg",
         downloadUrl: "https://gofile.io/d/AzB5HX"
+    },
+    {
+        id: 18,
+        title: "Resident Evil Revelations 2",
+        description: "Sumérgete en una aterradora experiencia de terror y supervivencia. Lucha contra hordas de criaturas y descubre los secretos de una isla misteriosa.",
+        category: "Terror/supervivencia",
+        emoji: "🧟",
+        rating: 4.7,
+        weight: "18.9 GB",
+        image: "images/resident-evil-revelations-2.jpg",
+        downloadUrl: "https://gofile.io/d/Yg1rUY"
     }
 ];
 
