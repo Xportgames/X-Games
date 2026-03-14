@@ -124,7 +124,7 @@ const games = [
         emoji: "🏰",
         rating: 4.8,
         weight: "79.2 GB",
-        image: "images/resident-evil-requiem-new.jpg",
+        image: "images/resident-evil-requiem-final.jpg",
         downloadUrl: "https://gofile.io/d/MgwxvP",
         tutorialUrl: "https://youtu.be/kwuB2DtSlKU?si=PQfr7REiKLkj9L01"
     },
