@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "title": "Bienvenidos a X-PortGame 2.0",
+    "created": 1773487461.411441,
+    "last_updated": 1773487506.236494,
+    "total_slides": 6
+  },
+  "slides": [
+    {
+      "id": "intro_slide",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "covers_update_slide",
+      "state": "edit_pending",
+      "pageNum": 2
+    },
+    {
+      "id": "re_revelations_slide",
+      "state": "edit_pending",
+      "pageNum": 3
+    },
+    {
+      "id": "forza_horizon_slide",
+      "state": "edit_pending",
+      "pageNum": 4
+    },
+    {
+      "id": "low_spec_slide",
+      "state": "edit_pending",
+      "pageNum": 5
+    },
+    {
+      "id": "steamrip_thanks_slide",
+      "state": "edit_pending",
+      "pageNum": 6
+    }
+  ],
+  "outline": [
+    {
+      "id": "intro_slide",
+      "title": "Bienvenidos a X-PortGame 2.0",
+      "summary": "Presentación de la plataforma como un sitio seguro, sin anuncios y con una interfaz moderna inspirada en YouTube.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "covers_update_slide",
+      "title": "Actualización de Portadas: Calidad Visual Superior",
+      "summary": "Muestra de las nuevas portadas en alta resolución (16:9) optimizadas para PC y móviles.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "re_revelations_slide",
+      "title": "Resident Evil Revelations 2: Terror en Alta Definición",
+      "summary": "Detalles sobre la nueva portada y la experiencia de supervivencia inmersiva de 18.9 GB.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "forza_horizon_slide",
+      "title": "Forza Horizon 4: La Emoción del Festival Automovilístico",
+      "summary": "Presentación de la portada dinámica y el vasto mundo abierto de 101.6 GB con más de 450 coches.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "low_spec_slide",
+      "title": "Optimización para Gamas Media/Baja: Diversión para Todos",
+      "summary": "Sección dedicada a juegos ligeros como Cuphead (5.32 GB) que funcionan en cualquier configuración.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "steamrip_thanks_slide",
+      "title": "Alianza con SteamRIP: Seguridad y Confianza",
+      "summary": "Agradecimiento especial a SteamRIP por su contribución al catálogo seguro y verificado.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}
