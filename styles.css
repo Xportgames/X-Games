@@ -58,16 +58,36 @@ body {
 
 /* Tarjetas de juegos - Estilo Poster de Cine */
 .game-card {
+    /* Tarjetas de juegos - Estilo Horizontal (Banner) */
+.game-card {
     position: relative;
     overflow: hidden;
-    border-radius: 0.75rem;
+    border-radius: 1rem;
     transition: all 0.3s ease;
-    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    background: rgba(15, 23, 42, 0.85) !important;
     border: 2px solid #00d4ff;
-    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /* Esto las hace horizontales */
+    width: 100%;
+    max-width: 400px; 
+    margin: 15px auto;
+}
+
+/* Para que la imagen se vea acostada y no se deforme */
+.game-card img {
+    width: 100%;
+    height: 180px; /* Altura fija tipo banner */
+    object-fit: cover; 
+    border-bottom: 2px solid #00d4ff;
+}
+
+.game-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #00ffff;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.7);
+}
 }
 
 .game-card:hover {
