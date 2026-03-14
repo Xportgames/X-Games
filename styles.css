@@ -56,41 +56,56 @@ body {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Tarjetas de juegos */
+/* Tarjetas de juegos - Estilo Poster de Cine */
 .game-card {
     position: relative;
     overflow: hidden;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-    border: 1px solid #374151;
+    border: 2px solid #00d4ff;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .game-card:hover {
-    transform: translateY(-8px);
-    border-color: #a855f7;
-    box-shadow: 0 20px 25px -5px rgba(168, 85, 247, 0.2);
+    transform: translateY(-12px) scale(1.05);
+    border-color: #00ffff;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6), 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .game-card-image {
     width: 100%;
-    height: 200px;
+    height: 380px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
     overflow: hidden;
+    position: relative;
 }
 
 .game-card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-card-image img {
+    transform: scale(1.1);
 }
 
 .game-card-content {
-    padding: 1.5rem;
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .game-card-title {

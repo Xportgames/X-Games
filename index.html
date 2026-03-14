@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-900 text-white" style="background-image: url('images/background-abstract.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
   <video autoplay muted loop playsinline id="bg-video" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.15; filter: invert(1);">
   <source src="background.mp4" type="video/mp4">
 </video>  <!-- Navegación -->
@@ -114,10 +114,10 @@
     </section>
 
     <!-- Juegos Destacados -->
-    <section id="juegos" class="py-16 bg-gray-800">
+    <section id="juegos" class="py-16 bg-gray-800 bg-opacity-80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-12">Juegos Destacados</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="gameGrid">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6" id="gameGrid">
                 <!-- Los juegos se cargarán aquí dinámicamente -->
             </div>
         </div>
