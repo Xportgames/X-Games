@@ -124,7 +124,7 @@ const games = [
         emoji: "🏰",
         rating: 4.8,
         weight: "79.2 GB",
-        image: "images/resident-evil-9.jpg",
+        image: "images/resident-evil-requiem.jpg",
         downloadUrl: "https://gofile.io/d/MgwxvP",
         tutorialUrl: "https://youtu.be/kwuB2DtSlKU?si=PQfr7REiKLkj9L01"
     },
@@ -136,7 +136,7 @@ const games = [
         emoji: "🏍️",
         rating: 4.7,
         weight: "62.4 GB",
-        image: "images/days-gone.png",
+        image: "images/days-gone-remastered.jpg",
         downloadUrl: "https://gofile.io/d/q1cKfc"
     },
     {
@@ -147,7 +147,7 @@ const games = [
         emoji: "🕷️",
         rating: 4.9,
         weight: "57.1 GB",
-        image: "images/spiderman.png",
+        image: "images/spiderman-new.jpg",
         downloadUrl: "https://gofile.io/d/6AvFzh"
     },
     {
@@ -158,7 +158,7 @@ const games = [
         emoji: "🌿",
         rating: 4.9,
         weight: "46.7 GB",
-        image: "images/the-last-of-us-1.png",
+        image: "images/the-last-of-us-1-new.jpg",
         downloadUrl: "https://gofile.io/d/AzB5HX"
     }
 ];
