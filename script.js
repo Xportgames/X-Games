@@ -193,6 +193,17 @@ const games = [
         weight: "5.32 GB",
         image: "images/cuphead.jpg",
         downloadUrl: "https://www.mediafire.com/file/mpcuslg4p43tvsr/Cuphead.rar/file"
+    },
+    {
+        id: 21,
+        title: "God of War",
+        description: "Embárcate en un viaje épico con Kratos y Atreus en el reino nórdico. Una aventura brutal y emotiva llena de mitología y combate.",
+        category: "Aventura",
+        emoji: "🪓",
+        rating: 4.9,
+        weight: "37.2 GB",
+        image: "images/god-of-war.jpg",
+        downloadUrl: "https://gofile.io/d/OUbvV2"
     }
 ];
 
