@@ -138,6 +138,17 @@ const games = [
         weight: "62.4 GB",
         image: "images/days-gone.png",
         downloadUrl: "https://gofile.io/d/q1cKfc"
+    },
+    {
+        id: 16,
+        title: "Spider-Man Remastered",
+        description: "Conviértete en el amigable vecino Spider-Man en esta épica aventura de mundo abierto. Balancéate por Nueva York, lucha contra villanos icónicos y vive una historia cinematográfica increíble.",
+        category: "mundo abierto/pelea",
+        emoji: "🕷️",
+        rating: 4.9,
+        weight: "57.1 GB",
+        image: "images/spiderman.png",
+        downloadUrl: "https://gofile.io/d/6AvFzh"
     }
 ];
 
