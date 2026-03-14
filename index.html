@@ -7,11 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-white" style="background-image: url('images/background-abstract.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
-  <video autoplay muted loop playsinline id="bg-video" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.15; filter: invert(1);">
-  <source src="background.mp4" type="video/mp4">
-</video>  <!-- Navegación -->
-    <nav class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+<body class="text-white" style="background-image: url('images/background-abstract.jpg'); background-attachment: fixed; background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <!-- Navegación -->
+    <nav class="bg-gray-800 bg-opacity-90 border-b border-gray-700 sticky top-0 z-50 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-2">
@@ -35,77 +33,53 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Video Background -->
+    <!-- Hero Section -->
     <section id="inicio" class="relative overflow-hidden py-20 min-h-screen flex items-center justify-center">
-        <!-- Video de fondo -->
-        <div class="absolute inset-0 z-0">
-            <video autoplay muted loop playsinline class="w-full h-full object-cover">
-                <source src="videos/background.mp4" type="video/mp4">
-            </video>
-            <!-- Overlay oscuro para mejorar legibilidad -->
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <!-- Título animado con letras que se mueven -->
-            <h1 class="text-6xl md:text-7xl font-bold mb-6 h-24 flex items-center justify-center">
-                <span class="animated-title">X-PortGame 2.0</span>
-            </h1>
-            
-            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed font-semibold">
-                🎮 <span class="text-purple-400">Juegos de PC</span> • 🧟 <span class="text-red-400">Zombies</span> • 🌍 <span class="text-green-400">Mundo Abierto</span>
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 h-24 flex items-center justify-center"></h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                🎮 Juegos de PC • 🧟 Zombies • 🌍 Mundo Abierto
             </p>
-            
-            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Disfruta de cientos de juegos gratis, sin anuncios intrusivos y sin virus. 
-                <br><span class="text-yellow-300 font-bold">¿PC de bajos recursos? ¡No hay problema!</span> Contamos con juegos optimizados para cualquier configuración.
+            <p class="text-lg mb-12 text-gray-300 max-w-2xl mx-auto">
+                Disfruta de cientos de juegos gratis, sin anuncios intrusivos y sin virus. <br>
+                <span class="text-yellow-400">¿PC de bajos recursos? ¡No hay problema!</span> Contamos con juegos optimizados para cualquier configuración.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 shadow-lg neon-button">
-                    Explorar Juegos
-                </button>
-                <button class="border-2 border-blue-400 hover:bg-blue-500 hover:bg-opacity-20 px-8 py-3 rounded-lg font-semibold transition shadow-lg neon-button-outline">
-                    Más Información
-                </button>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <button class="neon-button px-8 py-3 rounded-lg text-lg font-bold">EXPLORAR JUEGOS</button>
+                <button class="neon-button-outline px-8 py-3 rounded-lg text-lg font-bold">MÁS INFORMACIÓN</button>
             </div>
         </div>
     </section>
 
-    <!-- Barra de Búsqueda -->
-    <section class="bg-gray-800 py-8 border-b border-gray-700">
+    <!-- Buscador -->
+    <section class="py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="relative">
-                <input 
-                    type="text" 
-                    id="searchInput"
-                    placeholder="Busca tu juego favorito..." 
-                    class="w-full px-6 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
-                >
-                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition">
-                    🔍
-                </button>
+            <div class="flex gap-2">
+                <input type="text" id="searchInput" placeholder="Busca tu juego favorito..." class="flex-1 px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-cyan-400 focus:outline-none">
+                <button class="neon-button px-6 py-3 rounded-lg">🔍</button>
             </div>
         </div>
     </section>
 
     <!-- Categorías -->
-    <section id="categorias" class="py-12 bg-gray-900">
+    <section id="categorias" class="py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-8">Categorías Populares</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center">
+                <div class="bg-gray-800 bg-opacity-60 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center border border-cyan-400 border-opacity-30">
                     <div class="text-3xl mb-2">🎯</div>
                     <p class="font-semibold">Acción</p>
                 </div>
-                <div class="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center">
+                <div class="bg-gray-800 bg-opacity-60 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center border border-cyan-400 border-opacity-30">
                     <div class="text-3xl mb-2">🧩</div>
                     <p class="font-semibold">Puzzles</p>
                 </div>
-                <div class="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center">
+                <div class="bg-gray-800 bg-opacity-60 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center border border-cyan-400 border-opacity-30">
                     <div class="text-3xl mb-2">🏎️</div>
                     <p class="font-semibold">Carreras</p>
                 </div>
-                <div class="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center">
+                <div class="bg-gray-800 bg-opacity-60 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center border border-cyan-400 border-opacity-30">
                     <div class="text-3xl mb-2">🎮</div>
                     <p class="font-semibold">Aventura</p>
                 </div>
@@ -113,75 +87,75 @@
         </div>
     </section>
 
-    <!-- Juegos Destacados -->
-    <section id="juegos" class="py-16 bg-gray-800 bg-opacity-80">
+    <!-- Juegos Destacados - PÓSTERS GIGANTES -->
+    <section id="juegos" class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-12">Juegos Destacados</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6" id="gameGrid">
-                <!-- Los juegos se cargarán aquí dinámicamente -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6" id="gameGrid">
+                <!-- Los juegos se cargarán aquí dinámicamente como pósters gigantes -->
             </div>
         </div>
     </section>
 
     <!-- Características -->
-    <section class="py-16 bg-gray-900">
+    <section class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-12 text-center">¿Por qué elegir X-PortGame?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 p-8 rounded-lg">
+                <div class="bg-gray-800 bg-opacity-60 p-8 rounded-lg border border-cyan-400 border-opacity-30">
                     <div class="text-4xl mb-4">✅</div>
-                    <h3 class="text-xl font-bold mb-3">Sin Anuncios</h3>
-                    <p class="text-gray-400">Disfruta de una experiencia de juego limpia sin interrupciones publicitarias.</p>
+                    <h3 class="text-xl font-bold mb-4">Sin Anuncios</h3>
+                    <p class="text-gray-300">Disfruta de una experiencia de juego limpia sin interrupciones publicitarias.</p>
                 </div>
-                <div class="bg-gray-800 p-8 rounded-lg">
+                <div class="bg-gray-800 bg-opacity-60 p-8 rounded-lg border border-cyan-400 border-opacity-30">
                     <div class="text-4xl mb-4">🛡️</div>
-                    <h3 class="text-xl font-bold mb-3">100% Seguro</h3>
-                    <p class="text-gray-400">Todos nuestros juegos están verificados y libres de malware.</p>
+                    <h3 class="text-xl font-bold mb-4">100% Seguro</h3>
+                    <p class="text-gray-300">Todos nuestros juegos están verificados y libres de malware.</p>
                 </div>
-                <div class="bg-gray-800 p-8 rounded-lg">
+                <div class="bg-gray-800 bg-opacity-60 p-8 rounded-lg border border-cyan-400 border-opacity-30">
                     <div class="text-4xl mb-4">⚡</div>
-                    <h3 class="text-xl font-bold mb-3">Rápido y Ligero</h3>
-                    <p class="text-gray-400">Carga instantánea sin necesidad de descargas pesadas.</p>
+                    <h3 class="text-xl font-bold mb-4">Rápido y Ligero</h3>
+                    <p class="text-gray-300">Carga instantánea sin necesidad de descargas pesadas.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contacto" class="bg-gray-800 border-t border-gray-700 py-12">
+    <footer class="bg-gray-900 bg-opacity-80 border-t border-gray-700 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h4 class="font-bold mb-4">Sobre Nosotros</h4>
-                    <p class="text-gray-400 text-sm">X-PortGame es tu plataforma de juegos online gratuita y segura.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Enlaces</h4>
-                    <ul class="text-gray-400 text-sm space-y-2">
-                        <li><a href="#" class="hover:text-purple-400">Inicio</a></li>
-                        <li><a href="#" class="hover:text-purple-400">Juegos</a></li>
-                        <li><a href="#" class="hover:text-purple-400">Categorías</a></li>
+                    <h4 class="font-bold mb-4">X-PortGame</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#inicio" class="hover:text-cyan-400">Inicio</a></li>
+                        <li><a href="#juegos" class="hover:text-cyan-400">Juegos</a></li>
+                        <li><a href="#categorias" class="hover:text-cyan-400">Categorías</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">Legal</h4>
-                    <ul class="text-gray-400 text-sm space-y-2">
-                        <li><a href="#" class="hover:text-purple-400">Privacidad</a></li>
-                        <li><a href="#" class="hover:text-purple-400">Términos</a></li>
-                        <li><a href="#" class="hover:text-purple-400">Contacto</a></li>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-cyan-400">Privacidad</a></li>
+                        <li><a href="#" class="hover:text-cyan-400">Términos</a></li>
+                        <li><a href="#" class="hover:text-cyan-400">Contacto</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Síguenos</h4>
-                    <div class="flex space-x-4 text-gray-400">
-                        <a href="#" class="hover:text-purple-400">Twitter</a>
-                        <a href="#" class="hover:text-purple-400">Discord</a>
-                        <a href="#" class="hover:text-purple-400">YouTube</a>
-                    </div>
+                    <h4 class="font-bold mb-4">Redes Sociales</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-cyan-400">Twitter</a></li>
+                        <li><a href="#" class="hover:text-cyan-400">Discord</a></li>
+                        <li><a href="#" class="hover:text-cyan-400">YouTube</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Información</h4>
+                    <p class="text-gray-400 text-sm">X-PortGame 2.0 - Juegos gratis sin anuncios ni virus. Todos los derechos reservados.</p>
                 </div>
             </div>
             <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-                <p>&copy; 2026 X-PortGame 2.0. Todos los derechos reservados. Hecho con ❤️</p>
+                <p>&copy; 2026 X-PortGame. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
