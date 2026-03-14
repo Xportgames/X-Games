@@ -1,4 +1,4 @@
-o/* Estilos personalizados para X-PortGame 2.0 */
+/* Estilos personalizados para X-PortGame 2.0 */
 
 * {
     margin: 0;
@@ -56,53 +56,52 @@ body {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-
-    /* Tarjetas de juegos - Estilo Horizontal (Banner) */
+/* Tarjetas de juegos - Estilo HORIZONTAL (Acostadas) */
 .game-card {
     position: relative;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     transition: all 0.3s ease;
-    background: rgba(15, 23, 42, 0.85) !important;
-    border: 2px solid #00d4ff;
-    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    border: 3px solid #00d4ff;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
     display: flex;
-    flex-direction: column;
-    /* Esto las hace horizontales */
+    flex-direction: row;
+    height: 200px;
     width: 100%;
-    max-width: 400px; 
-    margin: 15px 
-    
-}/* --- ESTILO HORIZONTAL TIPO BANNER --- */
-.game-card {
-    background: rgba(15, 23, 42, 0.9) !important;
-    border: 2px solid #00ffff !important;
-    border-radius: 15px !important;
-    overflow: hidden !important;
-    max-width: 450px !important; /* Ancho de la tarjeta */
-    margin: 20px auto !important;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    max-width: 100%;
+    margin: 0 auto 1.5rem;
 }
 
-/* LA CLAVE: Ajustar la altura de la imagen */
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: #00ffff;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6), 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
 .game-card-image {
-    width: 100% !important;
-    height: 180px !important; /* Altura corta para que se vea acostada */
-    overflow: hidden !important;
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    min-width: 150px;
 }
 
 .game-card-image img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; /* Para que la imagen no se estire */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.game-card-content {
-    padding: 15px !important;
-    text-align: center !important;
-    background: transparent !important;
+.game-card:hover .game-card-image img {
+    transform: scale(1.1);
 }
 
 .game-card-content {
@@ -112,6 +111,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.6);
+    width: 65%;
+    overflow: hidden;
 }
 
 .game-card-title {
@@ -119,30 +120,41 @@ body {
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: #f3f4f6;
+    line-height: 1.2;
 }
 
 .game-card-description {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     color: #9ca3af;
-    margin-bottom: 1rem;
-    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .game-card-button {
     width: 100%;
     padding: 0.75rem;
-    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    background: linear-gradient(135deg, #0066cc 0%, #0099ff 100%);
     color: white;
-    border: none;
+    border: 2px solid #00d4ff;
     border-radius: 0.375rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .game-card-button:hover {
     transform: scale(1.02);
-    box-shadow: 0 10px 15px -3px rgba(168, 85, 247, 0.3);
+    border-color: #00ffff;
+    box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3);
+    background: linear-gradient(135deg, #0099ff 0%, #00ccff 100%);
 }
 
 /* Barra de búsqueda */
@@ -174,8 +186,20 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .game-card {
+        flex-direction: column;
+        height: auto;
+        max-width: 100%;
+    }
+    
     .game-card-image {
+        width: 100%;
         height: 150px;
+        min-width: auto;
+    }
+    
+    .game-card-content {
+        width: 100%;
     }
     
     h1 {
@@ -241,7 +265,6 @@ button:active::before {
         background-position: -200% 0;
     }
 }
-
 
 /* Animación de título con letras que se mueven */
 .animated-title {
@@ -313,7 +336,6 @@ video {
     box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
 }
 
-
 /* Estilos Neón Azul para Botones de Descarga */
 .neon-button {
     border: 2px solid #00d4ff;
@@ -355,17 +377,24 @@ video {
     color: #00ffff;
 }
 
-/* Botones de descarga en tarjetas de juegos con marco neón */
-.game-card-button {
-    border: 2px solid #00d4ff !important;
-    box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2) !important;
-    background: linear-gradient(135deg, #0066cc 0%, #0099ff 100%) !important;
-    color: #ffffff !important;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s 
+/* Fondo global con imagen */
+body {
+    position: relative;
+    background: url('images/78a28d9adbe2ee42f92ccb2bb9648564.jpg') center/cover fixed;
+    background-attachment: fixed;
+}
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    pointer-events: none;
+}
 
 /* Animación de brillo neón */
 @keyframes neonGlow {
@@ -375,27 +404,6 @@ video {
     50% {
         box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3);
     }
-}/* EL FONDO QUE MANDA - X-PORTGAMES */
-body {
-    background-image: url('images/78a28d9adbe2ee42f92ccb2bb9648564.jpg') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
-    background-repeat: no-repeat !important;
-    margin: 0;
-    padding: 0;
-}
-
-/* Capa para que el texto resalte (opcional) */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2) !important 
-    z-index: -1;
 }
 
 .neon-button {
