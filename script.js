@@ -182,6 +182,17 @@ const games = [
         weight: "101.6 GB",
         image: "images/forza-horizon-4.jpg",
         downloadUrl: "https://gofile.io/d/hRF2Xq"
+    },
+    {
+        id: 20,
+        title: "Cuphead",
+        description: "Un juego de acción clásico centrado en batallas contra jefes. Inspirado en los dibujos animados de los años 30.",
+        category: "Aventura",
+        emoji: "☕",
+        rating: 4.9,
+        weight: "5.32 GB",
+        image: "images/cuphead.jpg",
+        downloadUrl: "https://www.mediafire.com/file/mpcuslg4p43tvsr/Cuphead.rar/file"
     }
 ];
 
