@@ -215,6 +215,17 @@ const games = [
         weight: "52.0 GB",
         image: "images/beamng-drive.png",
         downloadUrl: "https://gofile.io/d/FbSK7l"
+    },
+    {
+        id: 23,
+        title: "Marvel's Spider-Man 2",
+        description: "Únete a Peter Parker y Miles Morales en una nueva aventura en la ciudad de Nueva York. Domina nuevas habilidades y enfréntate a villanos icónicos.",
+        category: "Mundo abierto/Pelea",
+        emoji: "🕷️",
+        rating: 4.9,
+        weight: "101.6 GB",
+        image: "images/spiderman-2.jpg",
+        downloadUrl: "https://gofile.io/d/YWmH4C"
     }
 ];
 
