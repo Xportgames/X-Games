@@ -443,3 +443,69 @@ a[href*="gofile"]:hover {
     color: #00ffff;
     background: rgba(0, 212, 255, 0.1);
 }
+
+
+/* Estilos para la sección de agradecimiento a SteamRIP */
+.steamrip-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.steamrip-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.steamrip-section > div {
+    position: relative;
+    z-index: 1;
+}
+
+.steamrip-section h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+}
+
+.steamrip-section p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #e5e7eb;
+}
+
+.steamrip-section a.neon-button {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.steamrip-section a.neon-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px #00d4ff, 0 0 50px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+    .steamrip-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .steamrip-section p {
+        font-size: 0.95rem;
+    }
+}
