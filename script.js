@@ -171,6 +171,17 @@ const games = [
         weight: "18.9 GB",
         image: "images/resident-evil-revelations-2.jpg",
         downloadUrl: "https://gofile.io/d/Yg1rUY"
+    },
+    {
+        id: 19,
+        title: "Forza Horizon 4",
+        description: "Experimenta la emoción de un festival automovilístico en un mundo abierto dinámico. Compite, explora y colecciona más de 450 coches.",
+        category: "Mundo abierto/simulación",
+        emoji: "🏎️",
+        rating: 4.9,
+        weight: "101.6 GB",
+        image: "images/forza-horizon-4.jpg",
+        downloadUrl: "https://gofile.io/d/hRF2Xq"
     }
 ];
 
