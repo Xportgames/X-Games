@@ -149,6 +149,17 @@ const games = [
         weight: "57.1 GB",
         image: "images/spiderman.png",
         downloadUrl: "https://gofile.io/d/6AvFzh"
+    },
+    {
+        id: 17,
+        title: "The Last of Us Part I",
+        description: "Vive la emotiva historia de Joel y Ellie en este remake completo para PC. Sobrevive en un mundo post-apocalíptico donde cada decisión cuenta y la humanidad está al borde de la extinción.",
+        category: "supervivencia/aventura",
+        emoji: "🌿",
+        rating: 4.9,
+        weight: "46.7 GB",
+        image: "images/the-last-of-us-1.png",
+        downloadUrl: "https://gofile.io/d/AzB5HX"
     }
 ];
 
