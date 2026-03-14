@@ -226,6 +226,17 @@ const games = [
         weight: "101.6 GB",
         image: "images/spiderman-2.jpg",
         downloadUrl: "https://gofile.io/d/YWmH4C"
+    },
+    {
+        id: 24,
+        title: "Stray",
+        description: "Perdido, solo y separado de su familia, un gato callejero debe desentrañar un antiguo misterio para escapar de una ciberciudad olvidada y encontrar el camino a casa.",
+        category: "Futurista",
+        emoji: "🐱",
+        rating: 4.7,
+        weight: "6.8 GB",
+        image: "images/stray.jpg",
+        downloadUrl: "https://gofile.io/d/FmkF5V"
     }
 ];
 
