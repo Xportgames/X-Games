@@ -291,3 +291,129 @@ video {
 #inicio button:hover {
     box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
 }
+
+
+/* Estilos Neón Azul para Botones de Descarga */
+.neon-button {
+    border: 2px solid #00d4ff;
+    box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2);
+    background: linear-gradient(135deg, #0066cc 0%, #0099ff 100%);
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+    border-color: #00ffff;
+    box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3);
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #0099ff 0%, #00ccff 100%);
+}
+
+.neon-button:active {
+    box-shadow: 0 0 30px #00ffff, 0 0 50px #0099ff, inset 0 0 30px rgba(0, 212, 255, 0.5);
+}
+
+.neon-button-outline {
+    border: 2px solid #00d4ff;
+    box-shadow: 0 0 10px #00d4ff;
+    color: #00d4ff;
+    background: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.neon-button-outline:hover {
+    border-color: #00ffff;
+    box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff;
+    background: rgba(0, 212, 255, 0.1);
+    color: #00ffff;
+}
+
+/* Botones de descarga en tarjetas de juegos con marco neón */
+.game-card-button {
+    border: 2px solid #00d4ff !important;
+    box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2) !important;
+    background: linear-gradient(135deg, #0066cc 0%, #0099ff 100%) !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.game-card-button:hover {
+    border-color: #00ffff !important;
+    box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3) !important;
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #0099ff 0%, #00ccff 100%) !important;
+}
+
+/* Fondo global con video */
+body {
+    position: relative;
+    background: #000000;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('videos/background.mp4') center/cover no-repeat;
+    background-attachment: fixed;
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* Overlay oscuro global para mejorar legibilidad */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Animación de brillo neón */
+@keyframes neonGlow {
+    0%, 100% {
+        box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3);
+    }
+}
+
+.neon-button {
+    animation: neonGlow 2s ease-in-out infinite;
+}
+
+/* Efecto de resplandor en enlaces de descarga */
+a[href*="gofile"] {
+    border: 2px solid #00d4ff;
+    box-shadow: 0 0 10px #00d4ff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    color: #00d4ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+a[href*="gofile"]:hover {
+    border-color: #00ffff;
+    box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff;
+    color: #00ffff;
+    background: rgba(0, 212, 255, 0.1);
+}
