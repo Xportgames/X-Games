@@ -92,7 +92,7 @@ const games = [
         rating: 4.7,
         weight: "53.8 GB",
         image: "images/cyberpunk-2077.jpg",
-        downloadUrl: "https://gofile.io/d/InslV8"
+        downloadUrl: "https://gofile.io/d/n8pbpi"
     },
     {
         id: 12,
@@ -137,7 +137,7 @@ const games = [
         rating: 4.7,
         weight: "62.4 GB",
         image: "images/days-gone-remastered.jpg",
-        downloadUrl: "https://gofile.io/d/q1cKfc"
+        downloadUrl: "https://gofile.io/d/37brJ0"
     },
     {
         id: 16,
