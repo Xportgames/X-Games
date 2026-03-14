@@ -169,7 +169,7 @@ const games = [
         emoji: "🧟",
         rating: 4.7,
         weight: "18.9 GB",
-        image: "images/resident-evil-revelations-2.jpg",
+        image: "images/resident-evil-revelations-2-new.jpg",
         downloadUrl: "https://gofile.io/d/Yg1rUY"
     },
     {
@@ -180,7 +180,7 @@ const games = [
         emoji: "🏎️",
         rating: 4.9,
         weight: "101.6 GB",
-        image: "images/forza-horizon-4.jpg",
+        image: "images/forza-horizon-4-new.jpg",
         downloadUrl: "https://gofile.io/d/hRF2Xq"
     },
     {
