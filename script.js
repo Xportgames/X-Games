@@ -1,4 +1,4 @@
-// Base de datos de juegos de ejemplo
+// Base de datos de juegos
 const games = [
     {
         id: 1,
@@ -99,7 +99,7 @@ const games = [
         title: "Resident Evil 7: Biohazard",
         description: "Sumérgete en un aterrador juego de horror donde la supervivencia es tu único objetivo. Enfrenta horrores indescriptibles en una mansión llena de misterios y peligros.",
         category: "terror",
-        emoji: "💩",
+        emoji: "🧟",
         rating: 4.8,
         weight: "62.2 GB",
         image: "images/resident-evil-7.png",
@@ -110,7 +110,7 @@ const games = [
         title: "Dragon Ball: Sparking! ZERO",
         description: "Vive intensas batallas de lucha en el universo de Dragon Ball. Domina poderosos ataques, transforma tus personajes y derrota a tus rivales en este juego de pelea competitivo.",
         category: "pelea",
-        emoji: "🤗",
+        emoji: "🔥",
         rating: 4.9,
         weight: "27.3 GB",
         image: "images/dragon-ball-sparking-zero.png",
@@ -121,19 +121,19 @@ const games = [
         title: "Resident Evil Village (RE8)",
         description: "Enfrenta horrores en primera persona en este juego de terror inmersivo. Explora un pueblo misterioso lleno de peligros y resuelve acertijos para sobrevivir a la noche mas aterradora.",
         category: "terror",
-        emoji: "💩",
+        emoji: "🏰",
         rating: 4.8,
         weight: "79.2 GB",
         image: "images/resident-evil-9.jpg",
         downloadUrl: "https://gofile.io/d/MgwxvP",
-        tutorialUrl: "https://youtu.be/kwuB2DtSlKU?si=PQfr7MEiKLkj9L01"
+        tutorialUrl: "https://youtu.be/kwuB2DtSlKU?si=PQfr7REiKLkj9L01"
     },
     {
         id: 15,
         title: "Days Gone",
         description: "Sobrevive en un mundo post-apocaliptico infestado de zombies. Monta tu motocicleta, explora vastos paisajes y lucha contra hordas de criaturas en este juego de supervivencia y aventura.",
         category: "supervivencia",
-        emoji: "💫",
+        emoji: "🏍️",
         rating: 4.7,
         weight: "62.4 GB",
         image: "images/days-gone.png",
@@ -190,32 +190,34 @@ function renderGames(gamesToRender) {
     });
 }
 
-// Crear tarjeta de juego
+// Crear tarjeta de juego estilo YouTube
 function createGameCard(game) {
     const card = document.createElement('div');
     card.className = 'game-card';
     
     const imageContent = game.image 
-        ? `<img src="${game.image}" alt="${game.title}" class="w-full h-40 object-cover rounded-t-lg">` 
+        ? `<div class="game-card-image"><img src="${game.image}" alt="${game.title}"></div>` 
         : `<div class="game-card-image"><span style="font-size: 4rem;">${game.emoji}</span></div>`;
     
-    const weightInfo = game.weight ? `<p class="text-xs text-gray-500 mt-1">Peso: ${game.weight}</p>` : '';
+    const weightInfo = game.weight ? `<span class="text-xs text-gray-400"> • ${game.weight}</span>` : '';
     
-    const downloadLink = game.downloadUrl ? `href="${game.downloadUrl}" target="_blank"` : 'onclick="downloadGame(\'${game.title}\')"';
+    const downloadLink = game.downloadUrl ? `href="${game.downloadUrl}" target="_blank"` : 'onclick="downloadGame(\'' + game.title + '\')"';
     const buttonTag = game.downloadUrl ? 'a' : 'button';
     const buttonAttrs = game.downloadUrl 
-        ? `href="${game.downloadUrl}" target="_blank" class="game-card-button" style="display: inline-block; text-decoration: none; text-align: center;"` 
-        : `class="game-card-button" onclick="downloadGame(\'${game.title}\')"`;
+        ? `href="${game.downloadUrl}" target="_blank" class="game-card-button" style="display: inline-block; text-decoration: none; text-align: center; margin-top: 10px;"` 
+        : `class="game-card-button" style="margin-top: 10px;" onclick="downloadGame(\'' + game.title + '\')"`;
     
     card.innerHTML = `
         ${imageContent}
         <div class="game-card-content">
-            <h3 class="game-card-title">${game.title}</h3>
-            <p class="game-card-description">${game.description}</p>
-            ${weightInfo}
-            <div class="flex justify-between items-center mb-3 mt-3">
-                <span class="text-sm text-gray-400">⭐ ${game.rating}</span>
-                <span class="text-xs bg-purple-600 bg-opacity-50 px-2 py-1 rounded">${game.category}</span>
+            <div>
+                <h3 class="game-card-title">${game.title}</h3>
+                <p class="game-card-description">${game.description}</p>
+                <div class="flex items-center mt-1">
+                    <span class="text-xs text-gray-400">⭐ ${game.rating}</span>
+                    <span class="text-xs text-gray-400 ml-2"> • ${game.category}</span>
+                    ${weightInfo}
+                </div>
             </div>
             <${buttonTag} ${buttonAttrs}>
                 Descargar
@@ -225,9 +227,9 @@ function createGameCard(game) {
     return card;
 }
 
-// Función para descargar (placeholder)
+// Función para descargar
 function downloadGame(gameName) {
-    alert(`Enlace de descarga para ${gameName} próximamente.\n\nEste juego estará disponible para descargar en breve.`);
+    alert(`Enlace de descarga para ${gameName} próximamente.`);
 }
 
 // Configurar event listeners
@@ -244,15 +246,6 @@ function setupEventListeners() {
     
     // Menú móvil
     menuBtn.addEventListener('click', toggleMobileMenu);
-    
-    // Filtrar por categoría
-    document.querySelectorAll('[data-category]').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const category = e.currentTarget.dataset.category;
-            const filtered = games.filter(game => game.category === category);
-            renderGames(filtered);
-        });
-    });
 }
 
 // Toggle menú móvil
@@ -261,7 +254,7 @@ function toggleMobileMenu() {
     nav.classList.toggle('mobile-menu-open');
 }
 
-// Smooth scroll para enlaces
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -271,22 +264,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// Agregar efecto de scroll en header
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 10) {
-        nav.classList.add('shadow-lg');
-    } else {
-        nav.classList.remove('shadow-lg');
-    }
-});
-
-// Cargar más juegos (simulado)
-function loadMoreGames() {
-    console.log('Cargando más juegos...');
-    // Aquí irían más juegos
-}
 
 // Función para filtrar por categoría
 function filterByCategory(category) {
@@ -298,6 +275,5 @@ function filterByCategory(category) {
     }
 }
 
-// Exportar funciones para uso global
-window.playGame = playGame;
+// Exportar funciones
 window.filterByCategory = filterByCategory;
