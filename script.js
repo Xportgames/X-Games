@@ -248,6 +248,17 @@ const games = [
         weight: "37.9 GB",
         image: "images/silent-hill-2.jpg",
         downloadUrl: "https://gofile.io/d/zgnYBJ"
+    },
+    {
+        id: 26,
+        title: "Dragon Ball FighterZ",
+        description: "Experimenta batallas épicas con tus personajes favoritos de Dragon Ball. Un juego de lucha 2.5D con gráficos impresionantes y combos espectaculares.",
+        category: "Competitivo",
+        emoji: "🔥",
+        rating: 4.8,
+        weight: "5.7 GB",
+        image: "images/dragon-ball-fighterz.jpg",
+        downloadUrl: "https://www.mediafire.com/file/zv1z0nrkvgt1dle/Dragon_Ball_FighterZ.zip/file"
     }
 ];
 
