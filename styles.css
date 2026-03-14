@@ -358,47 +358,8 @@ video {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-}
+    transition: all 0.3s 
 
-.game-card-button:hover {
-    border-color: #00ffff !important;
-    box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3) !important;
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #0099ff 0%, #00ccff 100%) !important;
-}
-
-/* Fondo global con video */
-body {
-    position: relative;
-    background: #000000;
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('videos/background.mp4') center/cover no-repeat;
-    background-attachment: fixed;
-    z-index: -2;
-    pointer-events: none;
-}
-
-/* Overlay oscuro global para mejorar legibilidad */
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    pointer-events: none;
-}
 
 /* Animación de brillo neón */
 @keyframes neonGlow {
@@ -408,6 +369,27 @@ body::after {
     50% {
         box-shadow: 0 0 20px #00d4ff, 0 0 30px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3);
     }
+}/* EL FONDO QUE MANDA - X-PORTGAMES */
+body {
+    background-image: url('images/78a28d9adbe2ee42f92ccb2bb9648564.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Capa para que el texto resalte (opcional) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2) !important 
+    z-index: -1;
 }
 
 .neon-button {
