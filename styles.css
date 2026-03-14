@@ -509,3 +509,70 @@ a[href*="gofile"]:hover {
         font-size: 0.95rem;
     }
 }
+
+
+/* Estilos para la sección de Gamas Media/Baja */
+#gamas-medias {
+    position: relative;
+    overflow: hidden;
+}
+
+#gamas-medias::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+#gamas-medias > div {
+    position: relative;
+    z-index: 1;
+}
+
+#gamas-medias h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(249, 115, 22, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#gamas-medias h2 span {
+    font-size: 1.8rem;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+#gamas-medias p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+    #gamas-medias h2 {
+        font-size: 1.5rem;
+    }
+    
+    #gamas-medias h2 span {
+        font-size: 1.3rem;
+    }
+    
+    #gamas-medias p {
+        font-size: 0.9rem;
+    }
+}

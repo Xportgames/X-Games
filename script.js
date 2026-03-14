@@ -193,6 +193,7 @@ const menuBtn = document.getElementById('menuBtn');
 // Inicializar la página
 document.addEventListener('DOMContentLoaded', () => {
     renderGames(games);
+    renderGammaMediaGames();
     setupEventListeners();
 });
 
@@ -209,6 +210,30 @@ function renderGames(gamesToRender) {
         const gameCard = createGameCard(game);
         gameCard.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s both`;
         gameGrid.appendChild(gameCard);
+    });
+}
+
+// Renderizar juegos de gama media/baja
+function renderGammaMediaGames() {
+    const gammaMediaGrid = document.getElementById('gammaMediaGrid');
+    if (!gammaMediaGrid) return;
+    
+    // Juegos optimizados para gamas media/baja (peso menor a 70GB y categorías ligeras)
+    const gammaMediaGames = games.filter(game => 
+        game.weight && parseInt(game.weight) < 70
+    );
+    
+    gammaMediaGrid.innerHTML = '';
+    
+    if (gammaMediaGames.length === 0) {
+        gammaMediaGrid.innerHTML = '<div class="text-center py-12"><p class="text-gray-400 text-lg">No hay juegos disponibles en esta categoría.</p></div>';
+        return;
+    }
+    
+    gammaMediaGames.forEach((game, index) => {
+        const gameCard = createGameCard(game);
+        gameCard.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s both`;
+        gammaMediaGrid.appendChild(gameCard);
     });
 }
 
@@ -299,3 +324,4 @@ function filterByCategory(category) {
 
 // Exportar funciones
 window.filterByCategory = filterByCategory;
+window.renderGammaMediaGames = renderGammaMediaGames;
