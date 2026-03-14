@@ -118,13 +118,13 @@ const games = [
     },
     {
         id: 14,
-        title: "Resident Evil Village (RE8)",
+        title: "Resident Evil Requiem",
         description: "Enfrenta horrores en primera persona en este juego de terror inmersivo. Explora un pueblo misterioso lleno de peligros y resuelve acertijos para sobrevivir a la noche mas aterradora.",
         category: "terror",
         emoji: "🏰",
         rating: 4.8,
         weight: "79.2 GB",
-        image: "images/resident-evil-requiem.jpg",
+        image: "images/resident-evil-requiem-new.jpg"
         downloadUrl: "https://gofile.io/d/MgwxvP",
         tutorialUrl: "https://youtu.be/kwuB2DtSlKU?si=PQfr7REiKLkj9L01"
     },
