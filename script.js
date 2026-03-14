@@ -276,6 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Renderizar juegos
 function renderGames(gamesToRender) {
+    if (!gameGrid) return;
     gameGrid.innerHTML = '';
     
     if (gamesToRender.length === 0) {
@@ -296,9 +297,11 @@ function renderGammaMediaGames() {
     if (!gammaMediaGrid) return;
     
     // Juegos optimizados para gamas media/baja (peso menor a 70GB y categorías ligeras)
-    const gammaMediaGames = games.filter(game => 
-        game.weight && parseInt(game.weight) < 70
-    );
+    const gammaMediaGames = games.filter(game => {
+        if (!game.weight) return false;
+        const weightNum = parseFloat(game.weight);
+        return weightNum < 70;
+    });
     
     gammaMediaGrid.innerHTML = '';
     
@@ -325,11 +328,11 @@ function createGameCard(game) {
     
     const weightInfo = game.weight ? `<span class="text-xs text-gray-400"> • ${game.weight}</span>` : '';
     
-    const downloadLink = game.downloadUrl ? `href="${game.downloadUrl}" target="_blank"` : 'onclick="downloadGame(\'' + game.title + '\')"';
-    const buttonTag = game.downloadUrl ? 'a' : 'button';
     const buttonAttrs = game.downloadUrl 
         ? `href="${game.downloadUrl}" target="_blank" class="game-card-button" style="display: inline-block; text-decoration: none; text-align: center; margin-top: 10px;"` 
-        : `class="game-card-button" style="margin-top: 10px;" onclick="downloadGame(\'' + game.title + '\')"`;
+        : `class="game-card-button" style="margin-top: 10px;" onclick="downloadGame('${game.title}')"`;
+    
+    const buttonTag = game.downloadUrl ? 'a' : 'button';
     
     card.innerHTML = `
         ${imageContent}
@@ -358,31 +361,37 @@ function downloadGame(gameName) {
 
 // Configurar event listeners
 function setupEventListeners() {
-    // Búsqueda
-    searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        const filtered = games.filter(game => 
-            game.title.toLowerCase().includes(searchTerm) ||
-            game.description.toLowerCase().includes(searchTerm)
-        );
-        renderGames(filtered);
-    });
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = games.filter(game => 
+                game.title.toLowerCase().includes(searchTerm) ||
+                game.description.toLowerCase().includes(searchTerm)
+            );
+            renderGames(filtered);
+        });
+    }
     
-    // Menú móvil
-    menuBtn.addEventListener('click', toggleMobileMenu);
+    if (menuBtn) {
+        menuBtn.addEventListener('click', toggleMobileMenu);
+    }
 }
 
 // Toggle menú móvil
 function toggleMobileMenu() {
     const nav = document.querySelector('nav');
-    nav.classList.toggle('mobile-menu-open');
+    if (nav) {
+        nav.classList.toggle('mobile-menu-open');
+    }
 }
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
         if (target) {
             target.scrollIntoView({ behavior: 'smooth' });
         }
@@ -394,7 +403,7 @@ function filterByCategory(category) {
     if (category === 'all') {
         renderGames(games);
     } else {
-        const filtered = games.filter(game => game.category === category);
+        const filtered = games.filter(game => game.category.toLowerCase().includes(category.toLowerCase()));
         renderGames(filtered);
     }
 }
