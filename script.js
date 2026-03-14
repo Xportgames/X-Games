@@ -204,6 +204,17 @@ const games = [
         weight: "37.2 GB",
         image: "images/god-of-war.jpg",
         downloadUrl: "https://gofile.io/d/OUbvV2"
+    },
+    {
+        id: 22,
+        title: "BeamNG.drive",
+        description: "Un simulador de vehículos dinámico y realista que ofrece posibilidades ilimitadas. Experimenta choques ultra realistas y una física de conducción inigualable.",
+        category: "Simulación",
+        emoji: "🚗",
+        rating: 4.8,
+        weight: "52.0 GB",
+        image: "images/beamng-drive.png",
+        downloadUrl: "https://gofile.io/d/FbSK7l"
     }
 ];
 
