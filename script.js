@@ -237,6 +237,17 @@ const games = [
         weight: "6.8 GB",
         image: "images/stray.jpg",
         downloadUrl: "https://gofile.io/d/FmkF5V"
+    },
+    {
+        id: 25,
+        title: "Silent Hill 2",
+        description: "Sumérgete en la niebla de Silent Hill en esta obra maestra del horror psicológico. Explora un pueblo desolado y enfrenta tus demonios internos en una búsqueda de la verdad.",
+        category: "Horror",
+        emoji: "🌫️",
+        rating: 4.9,
+        weight: "37.9 GB",
+        image: "images/silent-hill-2.jpg",
+        downloadUrl: "https://gofile.io/d/zgnYBJ"
     }
 ];
 
