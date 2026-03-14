@@ -1,4 +1,4 @@
-/* Estilos personalizados para X-PortGame 2.0 */
+o/* Estilos personalizados para X-PortGame 2.0 */
 
 * {
     margin: 0;
@@ -56,8 +56,7 @@ body {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Tarjetas de juegos - Estilo Poster de Cine */
-.game-card {
+
     /* Tarjetas de juegos - Estilo Horizontal (Banner) */
 .game-card {
     position: relative;
