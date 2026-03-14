@@ -72,51 +72,38 @@ body {
     /* Esto las hace horizontales */
     width: 100%;
     max-width: 400px; 
-    margin: 15px auto;
-}
-
-/* Para que la imagen se vea acostada y no se deforme */
-.game-card img {
-    width: 100%;
-    height: 180px; /* Altura fija tipo banner */
-    object-fit: cover; 
-    border-bottom: 2px solid #00d4ff;
-}
-
-.game-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    border-color: #00ffff;
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.7);
-}
-}
-
-.game-card:hover {
-    transform: translateY(-12px) scale(1.05);
-    border-color: #00ffff;
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6), 0 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-.game-card-image {
-    width: 100%;
-    height: 380px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 15px 
+    
+}/* --- ESTILO HORIZONTAL TIPO BANNER --- */
+.game-card {
+    background: rgba(15, 23, 42, 0.9) !important;
+    border: 2px solid #00ffff !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    max-width: 450px !important; /* Ancho de la tarjeta */
+    margin: 20px auto !important;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    overflow: hidden;
-    position: relative;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+/* LA CLAVE: Ajustar la altura de la imagen */
+.game-card-image {
+    width: 100% !important;
+    height: 180px !important; /* Altura corta para que se vea acostada */
+    overflow: hidden !important;
 }
 
 .game-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Para que la imagen no se estire */
 }
 
-.game-card:hover .game-card-image img {
-    transform: scale(1.1);
+.game-card-content {
+    padding: 15px !important;
+    text-align: center !important;
+    background: transparent !important;
 }
 
 .game-card-content {
