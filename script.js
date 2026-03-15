@@ -105,7 +105,7 @@ const games = [
         rating: 4.9,
         weight: "46.7 GB",
         image: "images/the-last-of-us-1-new.jpg",
-        downloadUrl: "https://gofile.io/d/AzB5HX"
+        downloadUrl: "https://gofile.io/d/ydrhpd"
     },
     {
         id: 18,
