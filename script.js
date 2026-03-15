@@ -49,7 +49,7 @@ const games = [
         rating: 4.8,
         weight: "62.2 GB",
         image: "images/resident-evil-7-final.jpg",
-        downloadUrl: "https://gofile.io/d/sOFTi3"
+        downloadUrl: "https://gofile.io/d/ZJWG4n"
     },
     {
         id: 13,
