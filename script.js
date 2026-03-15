@@ -1,77 +1,23 @@
 // Base de datos de juegos
 const games = [
-    {
-        id: 1,
-        title: "Space Runner",
-        description: "Vuela a través del espacio evitando asteroides",
-        category: "accion",
-        emoji: "🚀",
-        rating: 4.8
-    },
-    {
-        id: 2,
-        title: "Puzzle Master",
-        description: "Resuelve desafiantes acertijos lógicos",
-        category: "puzzles",
-        emoji: "🧩",
-        rating: 4.6
-    },
-    {
-        id: 3,
-        title: "Speed Racer",
-        description: "Compite en emocionantes carreras de velocidad",
-        category: "carreras",
-        emoji: "🏎️",
-        rating: 4.7
-    },
-    {
-        id: 4,
-        title: "Quest Adventure",
-        description: "Embárcate en una épica aventura de fantasía",
-        category: "aventura",
-        emoji: "⚔️",
-        rating: 4.9
-    },
-    {
-        id: 5,
-        title: "Flappy Bird Clone",
-        description: "El clásico juego de plataformas",
-        category: "accion",
-        emoji: "🐦",
-        rating: 4.5
-    },
-    {
-        id: 6,
-        title: "Sudoku Challenge",
-        description: "Desafía tu mente con Sudoku",
-        category: "puzzles",
-        emoji: "🔢",
-        rating: 4.4
-    },
-    {
-        id: 7,
-        title: "Drift Kings",
-        description: "Domina el arte del drift en la ciudad",
-        category: "carreras",
-        emoji: "🏁",
-        rating: 4.8
-    },
-    {
-        id: 8,
-        title: "Treasure Hunt",
-        description: "Busca tesoros escondidos en islas misteriosas",
-        category: "aventura",
-        emoji: "💎",
-        rating: 4.7
-    },
-    {
-        id: 9,
-        title: "Memory Game",
-        description: "Prueba tu memoria con este clásico",
-        category: "puzzles",
-        emoji: "🧠",
-        rating: 4.6
-    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         id: 10,
         title: "The Last of Us II Remastered",
