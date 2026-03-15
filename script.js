@@ -259,6 +259,17 @@ const games = [
         weight: "5.7 GB",
         image: "images/dragon-ball-fighterz.jpg",
         downloadUrl: "https://www.mediafire.com/file/zv1z0nrkvgt1dle/Dragon_Ball_FighterZ.zip/file"
+    },
+    {
+        id: 27,
+        title: "FIFA 22",
+        description: "Experimenta el fútbol en su máxima expresión con FIFA 22. Juega con tus equipos y jugadores favoritos, y compite en los modos más populares.",
+        category: "Deportes",
+        emoji: "⚽",
+        rating: 4.5,
+        weight: "57.7 GB",
+        image: "images/fifa-22.jpg",
+        downloadUrl: "https://gofile.io/d/EDeXpQ"
     }
 ];
 
