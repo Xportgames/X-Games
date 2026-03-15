@@ -300,7 +300,7 @@ function renderGammaMediaGames() {
     const gammaMediaGames = games.filter(game => {
         if (!game.weight) return false;
         const weightNum = parseFloat(game.weight);
-        return weightNum < 70;
+                return weightNum < 30; // Solo juegos con peso menor a 30 GB para gama baja estricta;
     });
     
     gammaMediaGrid.innerHTML = '';
