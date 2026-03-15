@@ -227,7 +227,6 @@ const games = [
         weight: "171.1 GB",
         image: "images/forza-horizon-5.jpg",
         downloadUrl: "https://buzzheavier.com/n9vjw9gdg82b"
-    }
     },
     {
         id: 29,
