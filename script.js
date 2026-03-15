@@ -216,6 +216,17 @@ const games = [
         weight: "57.7 GB",
         image: "images/fifa-22.jpg",
         downloadUrl: "https://gofile.io/d/EDeXpQ"
+    },
+    {
+        id: 28,
+        title: "Forza Horizon 5",
+        description: "Explora un vibrante mundo abierto en México con carreras ilimitadas y la diversión de conducir cientos de los mejores coches del mundo.",
+        category: "Simulación",
+        emoji: "🏎️",
+        rating: 4.9,
+        weight: "171.1 GB",
+        image: "images/forza-horizon-5.jpg",
+        downloadUrl: "https://buzzheavier.com/n9vjw9gdg82b"
     }
 ];
 
