@@ -228,6 +228,18 @@ const games = [
         image: "images/forza-horizon-5.jpg",
         downloadUrl: "https://buzzheavier.com/n9vjw9gdg82b"
     }
+    },
+    {
+        id: 29,
+        title: "GTA V",
+        description: "Explora la vasta metrópolis de Los Santos y el condado de Blaine en una de las experiencias de mundo abierto más aclamadas. Vive la historia de tres criminales muy diferentes mientras se arriesgan en una serie de atracos peligrosos.",
+        category: "Mundo abierto",
+        emoji: "🔓",
+        rating: 4.9,
+        weight: "127.7 GB",
+        image: "images/gta-v.png",
+        downloadUrl: "https://gofile.io/d/TDabIh"
+    }
 ];
 
 // Elementos del DOM
