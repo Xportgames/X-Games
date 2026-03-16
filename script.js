@@ -271,6 +271,17 @@ const games = [
         weight: "67.4 GB",
         image: "images/re4-remake.jpg",
         downloadUrl: "https://buzzheavier.com/sb3d4wends58"
+    },
+    {
+        id: 33,
+        title: "Silent Hill f",
+        description: "Sumérgete en una nueva y aterradora historia de Silent Hill ambientada en el Japón de los años 60. Descubre horrores psicológicos y una atmósfera inquietante.",
+        category: "Horror",
+        emoji: "🌸",
+        rating: 4.9,
+        weight: "45.6 GB",
+        image: "images/silent-hill-f.jpg",
+        downloadUrl: "https://buzzheavier.com/sb3d4wends58"
     }
 ];
 
