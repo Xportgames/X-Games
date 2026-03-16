@@ -238,6 +238,17 @@ const games = [
         weight: "127.7 GB",
         image: "images/gta-v.png",
         downloadUrl: "https://gofile.io/d/TDabIh"
+    },
+    {
+        id: 30,
+        title: "Doom",
+        description: "Sumérgete en una experiencia de combate brutal y frenética. Aniquila hordas de demonios con un arsenal devastador en este icónico shooter en primera persona.",
+        category: "Disparos/FPS",
+        emoji: "🔫",
+        rating: 4.9,
+        weight: "65.8 GB",
+        image: "images/doom.jpg",
+        downloadUrl: "https://gofile.io/d/RPbTag"
     }
 ];
 
