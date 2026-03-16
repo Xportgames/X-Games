@@ -249,6 +249,17 @@ const games = [
         weight: "65.8 GB",
         image: "images/doom.jpg",
         downloadUrl: "https://gofile.io/d/RPbTag"
+    },
+    {
+        id: 31,
+        title: "Red Dead Redemption 2",
+        description: "Sumérgete en el vasto y despiadado corazón de América. Un épico relato de honor y lealtad en los albores de una nueva era.",
+        category: "Aventura",
+        emoji: "🤠",
+        rating: 4.9,
+        weight: "122.1 GB",
+        image: "images/rdr2.jpg",
+        downloadUrl: "https://gofile.io/d/pdRrzq"
     }
 ];
 
