@@ -260,6 +260,17 @@ const games = [
         weight: "122.1 GB",
         image: "images/rdr2.jpg",
         downloadUrl: "https://gofile.io/d/pdRrzq"
+    },
+    {
+        id: 32,
+        title: "Resident Evil 4 Remake",
+        description: "Sumérgete en el horror de supervivencia con Leon S. Kennedy en una misión para rescatar a la hija del presidente. Una reimaginación del clásico con gráficos y jugabilidad modernos.",
+        category: "Horror",
+        emoji: "🧟",
+        rating: 4.9,
+        weight: "67.4 GB",
+        image: "images/re4-remake.jpg",
+        downloadUrl: "https://buzzheavier.com/sb3d4wends58"
     }
 ];
 
