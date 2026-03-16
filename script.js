@@ -115,7 +115,7 @@ const games = [
         emoji: "🧟",
         rating: 4.7,
         weight: "18.9 GB",
-        image: "images/resident-evil-revelations-2-v2.jpg",
+        image: "images/resident-evil-revelations-2-new.png",
         downloadUrl: "https://gofile.io/d/Yg1rUY"
     },
     {
