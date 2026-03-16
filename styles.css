@@ -576,3 +576,41 @@ a[href*="gofile"]:hover {
         font-size: 0.9rem;
     }
 }
+
+/* Estilo para el botón grande de neón */
+.neon-button-lg {
+    border: 3px solid #ff00ff; /* Borde magenta */
+    box-shadow: 0 0 15px #ff00ff, inset 0 0 15px rgba(255, 0, 255, 0.4);
+    background: linear-gradient(135deg, #cc00cc 0%, #ff33ff 100%); /* Gradiente magenta */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+.neon-button-lg:hover {
+    border-color: #ff66ff;
+    box-shadow: 0 0 25px #ff66ff, 0 0 40px #ff33ff, inset 0 0 25px rgba(255, 0, 255, 0.6);
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #ff33ff 0%, #ff66ff 100%);
+}
+
+.neon-button-lg:active {
+    box-shadow: 0 0 35px #ff66ff, 0 0 60px #ff33ff, inset 0 0 35px rgba(255, 0, 255, 0.8);
+}
+
+/* Animación de pulso para el botón grande */
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow: 0 0 15px #ff00ff, inset 0 0 15px rgba(255, 0, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 25px #ff66ff, 0 0 40px #ff33ff, inset 0 0 25px rgba(255, 0, 255, 0.6);
+    }
+}
+
+.neon-button-lg.animate-pulse {
+    animation: neonPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
