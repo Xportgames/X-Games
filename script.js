@@ -275,7 +275,17 @@ const games = [
         weight: "150.0 GB",
         image: "images/mk11.jpg",
         downloadUrl: "https://tunnel1.dlproxy.uk/download/EWiKZrMPaTbypxhWPBhYijrGt8Hq2Vq0g2NpxYv1er13UPcm6KB_0SymFBQ_dkJ2LTxhNdndwSHk9edhNeoMyoODI_Bh4GNyJE5ZQ--tqVbAEkuG4IVWtUL9-_ulWjXxKAx5ZddHA8N3LqAnvr1C-uNmDw-dIBrhYQNznpp5z2ENiN5YS7DC19OmOS4qp7zBTXHzlAYWgdcDPTzrskVMrorf9DpdvYC_lCco1mw9sgnwl9Ouy7RRVkIkaMgGPmdFCDu__2zkeNfPJn9pfKvKoI8Vmqc0tmXFXHGZ5POO-AIffchRTZ77yLLltLqhuf4ZEP2iSikF7CvXdmqoGu4gC2WermzJ20uHRFFCQ_2qUzESCRwZeVB3O7_tGSVCeUD8h4jBD4sAdvq0JIpv42Id3ENBBPkeWHqoR2VuDbNhcm9mgSW2Qdmv2Yovlit6rQohJ2b2KdZx1D8gY_6QN_LAoPTFyP9Kh5G-Dqht6S8D9qkRpLawOvkL02BuZpOKN04_5NnW4TLqh8rVm3MzqCPofUQbxLV7H-dtu8HmusL9E7P_kJ9_QYH7bzJtDquiJGTGnptSAHHk02jfnTFJ4LS732ZDSb6qSrTJEcbSBWauXfkQOgmzgJQEdGLWQ9z0aU7M?sig=ejf3S8ZFuDAlUYP5mb25enMGwXfD2vjqfxrHZuPnj0k"
-    }
+    },
+    {
+        id: 35,
+        title: "Forza Horizon 3",
+        description: "Explora el vasto y hermoso mundo abierto de Australia en Forza Horizon 3. Compite en emocionantes carreras, realiza acrobacias y personaliza cientos de coches.",
+        category: "Simulación",
+        emoji: "🏎️",
+        rating: 4.8,
+        weight: "61.2 GB",
+        image: "images/forza-horizon-3.png",
+        downloadUrl: "https://orion.dlproxy.uk/download/22caYocy6wa4RiBmhjEtCpl4vToiqPaJibJFkhtXF0DYfbItQdnx5fRsQtFUKtANaOtgZhcHR55-1M6KOh6OIqZRgkM4k9TOZEBWwuQ-YrHnXXyQx8XQRjyoPKx1w2W2G88_O728I8QfZbL70JksIilWHirtjECVkeyj1hrqSfI1f_xuKJCYF3WvQjQ9x-dJ25rg-0UcHfLK6d-aEVfj2D5tqDmQjn1I1B_NstY9xiDCvBMz7hYF1OChNheWg7MbRDQ1cQ_SqONzCqHKZ_GSBCGjAHQFgKFBiJpfmGhPr3bOph-tgUWc1dyFrH8cSURLrrL3SpYouWS9dywRK1G-Pgex0CfFY98NsyQ3jW0ESqq1h-Nt-42WzgnV0RQZ3Cd8d2evLEg9yvhUutL8H-sbN2Smnz-2li1PRmwvA271anFbP3pKfWoX2nly16_fOdt3vdB1FmUBZSAsP-qPsHDEOB_qyVD21dw-ceYu60nGhSHOa99O47NQzBJTpcEQswakMkYKjsl3wkLP_xyhVbA6w0c-zFMAy0KNN9Hy0Sr1isaM6TTUFz-_udFUBLtFlwdjuaSxpg_nqAfxdQhT3w2BHiNc8SKENefhnCL3QITcWW9ARI7snoD83DUJcg6MC7S?sig=T96mvUG4pslMdQaLhnv-VDM7jovFpRFcUxU9RIDq2SE"}
 ];
 
 // Función para renderizar los juegos
