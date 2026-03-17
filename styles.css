@@ -614,3 +614,69 @@ a[href*="gofile"]:hover {
 .neon-button-lg.animate-pulse {
     animation: neonPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* Estilos para la sección de Cuentas de Steam Compartidas */
+#steam-accounts {
+    position: relative;
+    overflow: hidden;
+}
+
+#steam-accounts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 30% 70%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+#steam-accounts > div {
+    position: relative;
+    z-index: 1;
+}
+
+#steam-accounts h2 {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+#steam-accounts img {
+    border: 3px solid rgba(168, 85, 247, 0.5);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.6), 0 0 40px rgba(236, 72, 153, 0.4);
+    transition: all 0.3s ease;
+}
+
+#steam-accounts img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.8), 0 0 60px rgba(236, 72, 153, 0.6);
+}
+
+#steam-accounts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#steam-accounts ul li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#steam-accounts ul li::before {
+    content: '🎮';
+    position: absolute;
+    left: 0;
+    color: #a855f7;
+}
+
+/* Eliminar el estilo del botón anterior si ya no se usa */
+.neon-button-lg {
+    display: none; /* Ocultar el botón si ya no es necesario */
+}
