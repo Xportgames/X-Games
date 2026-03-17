@@ -299,7 +299,7 @@ function renderGames(gamesToRender) {
         gameCard.innerHTML = `
             <div class="relative group">
                 <img src="${game.image}" alt="${game.title}" class="w-full h-48 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
-                <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-100 transition-opacity duration-300 rounded-lg">
                     <a href="${game.downloadUrl}" target="_blank" class="neon-button">DESCARGAR</a>
                 </div>
             </div>

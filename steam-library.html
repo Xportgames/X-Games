@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-PortGame 2.0 - Juegos Gratis sin Anuncios</title>
+    <title>X-PortGame 2.0 - Cuentas de Steam Compartidas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,11 +19,11 @@
                     <span class="text-sm text-gray-400">2.0</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="hover:text-purple-400 transition">Inicio</a>
-                    <a href="#juegos" class="hover:text-purple-400 transition">Juegos</a>
-                    <a href="#categorias" class="hover:text-purple-400 transition">Categorías</a>
-                    <a href="#gamas-medias" class="hover:text-purple-400 transition">Gamas Media/Baja</a>
-                    <a href="#contacto" class="hover:text-purple-400 transition">Contacto</a>
+                    <a href="index.html#inicio" class="hover:text-purple-400 transition">Inicio</a>
+                    <a href="index.html#juegos" class="hover:text-purple-400 transition">Juegos</a>
+                    <a href="index.html#categorias" class="hover:text-purple-400 transition">Categorías</a>
+                    <a href="index.html#gamas-medias" class="hover:text-purple-400 transition">Gamas Media/Baja</a>
+                    <a href="index.html#contacto" class="hover:text-purple-400 transition">Contacto</a>
                 </div>
                 <button id="menuBtn" class="md:hidden text-gray-400 hover:text-white">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,121 +34,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="relative overflow-hidden py-20 min-h-screen flex items-center justify-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <!-- Título animado con letras que se mueven -->
-            <h1 class="text-6xl md:text-7xl font-bold mb-6 h-24 flex items-center justify-center"></h1>
-            <p class="text-xl md:text-2xl mb-8 text-gray-200">
-                🎮 Juegos de PC • 🧟 Zombies • 🌍 Mundo Abierto
-            </p>
-            <p class="text-lg mb-12 text-gray-300 max-w-2xl mx-auto">
-                Disfruta de cientos de juegos gratis, sin anuncios intrusivos y sin virus. <br>
-                <span class="text-yellow-400">¿PC de bajos recursos? ¡No hay problema!</span> Contamos con juegos optimizados para cualquier configuración.
-            </p>
-            <div class="flex gap-4 justify-center flex-wrap">
-                <a href="#juegos" class="neon-button px-8 py-3 rounded-lg text-lg font-bold">JUEGOS PREINSTALADOS</a>
-                <a href="steam-library.html" class="neon-button-outline px-8 py-3 rounded-lg text-lg font-bold">CUENTAS DE STEAM COMPARTIDAS LEGALES</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Buscador -->
-    <section class="py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex gap-2">
-                <input type="text" id="searchInput" placeholder="Busca tu juego favorito..." class="flex-1 px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-cyan-400 focus:outline-none">
-                <button class="neon-button px-6 py-3 rounded-lg">🔍</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Categorías -->
-    <section id="categorias" class="py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-8">Categorías Populares</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-gray-800 bg-opacity-60 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center border border-cyan-400 border-opacity-30">
-                    <div class="text-3xl mb-2">🎯</div>
-                    <p class="font-semibold">Acción</p>
-                </div>
-                <div class="bg-gray-800 bg-opacity-60 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center border border-cyan-400 border-opacity-30">
-                    <div class="text-3xl mb-2">🧩</div>
-                    <p class="font-semibold">Puzzles</p>
-                </div>
-                <div class="bg-gray-800 bg-opacity-60 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center border border-cyan-400 border-opacity-30">
-                    <div class="text-3xl mb-2">🏎️</div>
-                    <p class="font-semibold">Carreras</p>
-                </div>
-                <div class="bg-gray-800 bg-opacity-60 hover:bg-gray-700 p-4 rounded-lg cursor-pointer transition transform hover:scale-105 text-center border border-cyan-400 border-opacity-30">
-                    <div class="text-3xl mb-2">🎮</div>
-                    <p class="font-semibold">Aventura</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Juegos Destacados - PÓSTERS GIGANTES -->
-    <section id="juegos" class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-12">Juegos Destacados</h2>
-            <div class="flex flex-col gap-0" id="gameGrid">
-                <!-- Los juegos se cargarán aquí dinámicamente estilo YouTube -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Gamas Media/Baja -->
-    <section id="gamas-medias" class="py-16 bg-gray-900 bg-opacity-40 border-t border-b border-purple-400 border-opacity-30">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-12">
-                <h2 class="text-3xl font-bold mb-4 flex items-center gap-3">
-                    <span class="text-yellow-400">⚡</span> Optimizado para Gamas Media/Baja
-                </h2>
-                <p class="text-gray-300 text-lg">Juegos ligeros y optimizados que funcionan perfectamente en cualquier configuración de PC. Disfruta de grandes títulos sin necesidad de hardware de última generación.</p>
-            </div>
-            <div class="flex flex-col gap-0" id="gammaMediaGrid">
-                <!-- Los juegos optimizados se cargarán aquí dinámicamente -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Agradecimiento a SteamRIP -->
-    <section class="steamrip-section py-12 bg-gradient-to-r from-cyan-900 from-10% via-gray-900 via-50% to-purple-900 to-90% border-t border-b border-cyan-400 border-opacity-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h3 class="text-2xl md:text-3xl font-bold mb-4 text-cyan-300">🙏 Agradecimiento Especial</h3>
-                <p class="text-gray-200 text-lg mb-4 max-w-3xl mx-auto">
-                    Parte de nuestro catálogo es posible gracias a <span class="font-bold text-cyan-400">SteamRIP</span>, una de las plataformas más seguras y confiables de la comunidad gamer. Si alguno de estos títulos te interesa, te invitamos a visitar su sitio y agradecerles por su increíble trabajo.
-                </p>
-                <a href="https://steamrip.com" target="_blank" class="inline-block neon-button px-6 py-2 rounded-lg text-sm font-semibold hover:shadow-lg hover:shadow-cyan-400 transition">
-                    Visitar SteamRIP →
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Características -->
     <section class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-12 text-center">¿Por qué elegir X-PortGame?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 bg-opacity-60 p-8 rounded-lg border border-cyan-400 border-opacity-30">
-                    <div class="text-4xl mb-4">✅</div>
-                    <h3 class="text-xl font-bold mb-4">Sin Anuncios</h3>
-                    <p class="text-gray-300">Disfruta de una experiencia de juego limpia sin interrupciones publicitarias.</p>
-                </div>
-                <div class="bg-gray-800 bg-opacity-60 p-8 rounded-lg border border-cyan-400 border-opacity-30">
-                    <div class="text-4xl mb-4">🛡️</div>
-                    <h3 class="text-xl font-bold mb-4">100% Seguro</h3>
-                    <p class="text-gray-300">Todos nuestros juegos están verificados y libres de malware.</p>
-                </div>
-                <div class="bg-gray-800 bg-opacity-60 p-8 rounded-lg border border-cyan-400 border-opacity-30">
-                    <div class="text-4xl mb-4">⚡</div>
-                    <h3 class="text-xl font-bold mb-4">Rápido y Ligero</h3>
-                    <p class="text-gray-300">Carga instantánea sin necesidad de descargas pesadas.</p>
-                </div>
-            </div>
+            <h1 class="text-4xl font-bold mb-12 text-center">Cuentas de Steam Compartidas Legales</h1>
+            <p class="text-gray-200 text-lg mb-8 text-center max-w-3xl mx-auto">Aquí encontrarás cuentas de Steam con una vasta biblioteca de juegos, todas 100% legales y con juegos comprados legítimamente. ¡Disfruta de una experiencia de juego segura y sin preocupaciones!</p>
         </div>
     </section>
 
@@ -242,10 +131,10 @@
                 <div>
                     <h4 class="font-bold mb-4">X-PortGame</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#inicio" class="hover:text-cyan-400">Inicio</a></li>
-                        <li><a href="#juegos" class="hover:text-cyan-400">Juegos</a></li>
-                        <li><a href="#categorias" class="hover:text-cyan-400">Categorías</a></li>
-                        <li><a href="#gamas-medias" class="hover:text-cyan-400">Gamas Media/Baja</a></li>
+                        <li><a href="index.html#inicio" class="hover:text-cyan-400">Inicio</a></li>
+                        <li><a href="index.html#juegos" class="hover:text-cyan-400">Juegos</a></li>
+                        <li><a href="index.html#categorias" class="hover:text-cyan-400">Categorías</a></li>
+                        <li><a href="index.html#gamas-medias" class="hover:text-cyan-400">Gamas Media/Baja</a></li>
                     </ul>
                 </div>
                 <div>
@@ -276,5 +165,16 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 </html>
