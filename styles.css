@@ -680,3 +680,32 @@ a[href*="gofile"]:hover {
 .neon-button-lg {
     display: none; /* Ocultar el botón si ya no es necesario */
 }
+
+.neon-button-vertical {
+    background-color: #00f; /* Azul neón */
+    color: #fff;
+    border: 2px solid #00f;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00f, 0 0 40px #00f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ocupa toda la altura disponible */
+    width: 80px; /* Ancho delgado */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.neon-button-vertical:hover {
+    background-color: #00a;
+    box-shadow: 0 0 10px #00a, 0 0 20px #00a, 0 0 40px #00a, 0 0 80px #00a;
+}
