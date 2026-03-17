@@ -1,23 +1,5 @@
 // Base de datos de juegos
 const games = [
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
         id: 10,
         title: "The Last of Us II Remastered",
@@ -282,155 +264,58 @@ const games = [
         weight: "45.6 GB",
         image: "images/silent-hill-f.jpg",
         downloadUrl: "https://buzzheavier.com/sb3d4wends58"
+    },
+    {
+        id: 34,
+        title: "Mortal Kombat 11",
+        description: "Experimenta la brutalidad de los combates en Mortal Kombat 11. Elige a tus luchadores favoritos y desata combos devastadores en este icónico juego de lucha.",
+        category: "Pelea",
+        emoji: "🐉",
+        rating: 4.9,
+        weight: "150.0 GB",
+        image: "images/mk11.jpg",
+        downloadUrl: "https://tunnel1.dlproxy.uk/download/EWiKZrMPaTbypxhWPBhYijrGt8Hq2Vq0g2NpxYv1er13UPcm6KB_0SymFBQ_dkJ2LTxhNdndwSHk9edhNeoMyoODI_Bh4GNyJE5ZQ--tqVbAEkuG4IVWtUL9-_ulWjXxKAx5ZddHA8N3LqAnvr1C-uNmDw-dIBrhYQNznpp5z2ENiN5YS7DC19OmOS4qp7zBTXHzlAYWgdcDPTzrskVMrorf9DpdvYC_lCco1mw9sgnwl9Ouy7RRVkIkaMgGPmdFCDu__2zkeNfPJn9pfKvKoI8Vmqc0tmXFXHGZ5POO-AIffchRTZ77yLLltLqhuf4ZEP2iSikF7CvXdmqoGu4gC2WermzJ20uHRFFCQ_2qUzESCRwZeVB3O7_tGSVCeUD8h4jBD4sAdvq0JIpv42Id3ENBBPkeWHqoR2VuDbNhcm9mgSW2Qdmv2Yovlit6rQohJ2b2KdZx1D8gY_6QN_LAoPTFyP9Kh5G-Dqht6S8D9qkRpLawOvkL02BuZpOKN04_5NnW4TLqh8rVm3MzqCPofUQbxLV7H-dtu8HmusL9E7P_kJ9_QYH7bzJtDquiJGTGnptSAHHk02jfnTFJ4LS732ZDSb6qSrTJEcbSBWauXfkQOgmzgJQEdGLWQ9z0aU7M?sig=ejf3S8ZFuDAlUYP5mb25enMGwXfD2vjqfxrHZuPnj0k"
     }
 ];
 
-// Elementos del DOM
-const gameGrid = document.getElementById('gameGrid');
-const searchInput = document.getElementById('searchInput');
-const menuBtn = document.getElementById('menuBtn');
-
-// Inicializar la página
-document.addEventListener('DOMContentLoaded', () => {
-    renderGames(games);
-    renderGammaMediaGames();
-    setupEventListeners();
-});
-
-// Renderizar juegos
+// Función para renderizar los juegos
 function renderGames(gamesToRender) {
-    if (!gameGrid) return;
-    gameGrid.innerHTML = '';
-    
-    if (gamesToRender.length === 0) {
-        gameGrid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-gray-400 text-lg">No se encontraron juegos.</p></div>';
-        return;
-    }
-    
-    gamesToRender.forEach((game, index) => {
-        const gameCard = createGameCard(game);
-        gameCard.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s both`;
+    const gameGrid = document.getElementById('gameGrid');
+    gameGrid.innerHTML = ''; // Limpiar la cuadrícula antes de renderizar
+
+    gamesToRender.forEach(game => {
+        const gameCard = document.createElement('div');
+        gameCard.className = 'game-card';
+        gameCard.innerHTML = `
+            <div class="relative group">
+                <img src="${game.image}" alt="${game.title}" class="w-full h-48 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                    <a href="${game.downloadUrl}" target="_blank" class="neon-button">DESCARGAR</a>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-bold text-white">${game.title}</h3>
+                <p class="text-gray-400 text-sm mt-1">${game.description}</p>
+                <div class="flex items-center justify-between mt-3 text-sm text-gray-300">
+                    <span class="font-semibold">⭐ ${game.rating}</span>
+                    <span class="font-semibold">${game.category}</span>
+                    <span class="font-semibold">${game.weight}</span>
+                </div>
+            </div>
+        `;
         gameGrid.appendChild(gameCard);
     });
 }
 
-// Renderizar juegos de gama media/baja
-function renderGammaMediaGames() {
-    const gammaMediaGrid = document.getElementById('gammaMediaGrid');
-    if (!gammaMediaGrid) return;
-    
-    // Juegos optimizados para gamas media/baja (peso menor a 70GB y categorías ligeras)
-    const gammaMediaGames = games.filter(game => {
-        if (!game.weight) return false;
-        const weightNum = parseFloat(game.weight);
-                return weightNum < 30; // Solo juegos con peso menor a 30 GB para gama baja estricta;
-    });
-    
-    gammaMediaGrid.innerHTML = '';
-    
-    if (gammaMediaGames.length === 0) {
-        gammaMediaGrid.innerHTML = '<div class="text-center py-12"><p class="text-gray-400 text-lg">No hay juegos disponibles en esta categoría.</p></div>';
-        return;
-    }
-    
-    gammaMediaGames.forEach((game, index) => {
-        const gameCard = createGameCard(game);
-        gameCard.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s both`;
-        gammaMediaGrid.appendChild(gameCard);
-    });
-}
+// Renderizar todos los juegos al cargar la página
+renderGames(games);
 
-// Crear tarjeta de juego estilo YouTube
-function createGameCard(game) {
-    const card = document.createElement('div');
-    card.className = 'game-card';
-    
-    const imageContent = game.image 
-        ? `<div class="game-card-image"><img src="${game.image}" alt="${game.title}"></div>` 
-        : `<div class="game-card-image"><span style="font-size: 4rem;">${game.emoji}</span></div>`;
-    
-    const weightInfo = game.weight ? `<span class="text-xs text-gray-400"> • ${game.weight}</span>` : '';
-    
-    const buttonAttrs = game.downloadUrl 
-        ? `href="${game.downloadUrl}" target="_blank" class="game-card-button" style="display: inline-block; text-decoration: none; text-align: center; margin-top: 10px;"` 
-        : `class="game-card-button" style="margin-top: 10px;" onclick="downloadGame('${game.title}')"`;
-    
-    const buttonTag = game.downloadUrl ? 'a' : 'button';
-    
-    card.innerHTML = `
-        ${imageContent}
-        <div class="game-card-content">
-            <div>
-                <h3 class="game-card-title">${game.title}</h3>
-                <p class="game-card-description">${game.description}</p>
-                <div class="flex items-center mt-1">
-                    <span class="text-xs text-gray-400">⭐ ${game.rating}</span>
-                    <span class="text-xs text-gray-400 ml-2"> • ${game.category}</span>
-                    ${weightInfo}
-                </div>
-            </div>
-            <${buttonTag} ${buttonAttrs}>
-                Descargar
-            </${buttonTag}>
-        </div>
-    `;
-    return card;
-}
-
-// Función para descargar
-function downloadGame(gameName) {
-    alert(`Enlace de descarga para ${gameName} próximamente.`);
-}
-
-// Configurar event listeners
-function setupEventListeners() {
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const filtered = games.filter(game => 
-                game.title.toLowerCase().includes(searchTerm) ||
-                game.description.toLowerCase().includes(searchTerm)
-            );
-            renderGames(filtered);
-        });
-    }
-    
-    if (menuBtn) {
-        menuBtn.addEventListener('click', toggleMobileMenu);
-    }
-}
-
-// Toggle menú móvil
-function toggleMobileMenu() {
-    const nav = document.querySelector('nav');
-    if (nav) {
-        nav.classList.toggle('mobile-menu-open');
-    }
-}
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        const target = document.querySelector(targetId);
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+// Función de búsqueda
+document.getElementById('searchInput').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const filteredGames = games.filter(game => 
+        game.title.toLowerCase().includes(searchTerm) || 
+        game.category.toLowerCase().includes(searchTerm)
+    );
+    renderGames(filteredGames);
 });
-
-// Función para filtrar por categoría
-function filterByCategory(category) {
-    if (category === 'all') {
-        renderGames(games);
-    } else {
-        const filtered = games.filter(game => game.category.toLowerCase().includes(category.toLowerCase()));
-        renderGames(filtered);
-    }
-}
-
-// Exportar funciones
-window.filterByCategory = filterByCategory;
-window.renderGammaMediaGames = renderGammaMediaGames;
