@@ -226,7 +226,7 @@ const games = [
         rating: 4.9,
         weight: "171.1 GB",
         image: "images/forza-horizon-5.jpg",
-        downloadUrl: "https://buzzheavier.com/n9vjw9gdg82b"
+        downloadUrl: "https://tunnel1.dlproxy.uk/download/WrTLulKik3KpjnMuO-0gDohCI1WaybS779E_l6yr1UHGRMFfTkE7B5t5Ys5_N2qu8u6HmpGsrEZKftnkvhgxcvRqn6Pp9kceoiJRSTvPjlW9McV7BJ-xx3usIrf-VTZ9_T7vyRXCDX0mGp_LGc9Nd5PD0vaeFIUe-G5Bhmkay8fEuecVna8DGkS2gcGHKviC1kE5C8XbdTPYaT4GZQSZuUbxfxxm9VXU7628y-HoLWXhBzw8qzwr82cwiw-qpLJ4GZQ_RZZw4eooDEpuj2-nNvweAQybQFOXn7sJx0AAEarg0EX9KbRLTKlQr2hfDfKf_LfVj1cpmEK61hZWnaTrDZB2_oTs7mqO01rlctu50if6Gjj5OP3kKHIGzbJJ0gIDQpyNqBGjb7N2LVhgtYx1svrEwm6995P3cQrvjxTjiPvg8fnsLpPkNPLIcrbtYSxMxz0ei0Cj-gMxXMCQ5dGNnxvNj0DKtUbc-9gp0Yfiql5UqGPiwOs5-YZJQpL9Xpm6T8hdP3ecJQtI6jNA3lRuV1E8tF3mB-f4X9lsEB6lvgTs9iQYWZhdm6dLqr1wm3GxfElJawEB9fqawktDmpCp8yyrOQQ_Re5w7hUR3uiXtSkczUYSR_9n00YjY335YC7L?sig=gmSYVNfwERj-1jTlpyjPhjOzaxJjKNpjCgAVdjenlYY"
     },
     {
         id: 29,
