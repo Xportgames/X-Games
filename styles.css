@@ -667,6 +667,7 @@ a[href*="gofile"]:hover {
     position: relative;
     padding-left: 1.5em;
     margin-bottom: 0.5em;
+    color: #007bff; /* Azul fuerte para el texto de la lista de juegos */
 }
 
 #steam-accounts ul li::before {
