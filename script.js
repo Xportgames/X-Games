@@ -86,7 +86,7 @@ const games = [
     },
     {
         id: 23,
-        title: "Marvel\\'s Spider-Man 2",
+        title: "Marvel\\\'s Spider-Man 2",
         description: "Únete a Peter Parker y Miles Morales en una nueva aventura en la ciudad de Nueva York. Domina nuevas habilidades y enfréntate a villanos icónicos.",
         category: "Mundo abierto/Pelea",
         emoji: "🕷️",
@@ -241,11 +241,10 @@ const games = [
     }
 
     // Renderizar todos los juegos al cargar la página
-    console.log("Calling renderGames with initial games array.");
     console.log("Games database initialized. Total games:", games.length);
     renderGames(games);
 
-    // Funci\u00F3n de b\u00DFqueda
+    // Funci\u00F3n de b\u00DFsqueda
     document.getElementById("searchInput").addEventListener("input", function() {
         const searchTerm = this.value.toLowerCase();
         const filteredGames = games.filter(game => 
@@ -278,4 +277,3 @@ const games = [
     }
 
     animateTitle();
-});
