@@ -1,3 +1,5 @@
+console.log("script.js has started execution.");
+
 // Base de datos de juegos
 const games = [
 
