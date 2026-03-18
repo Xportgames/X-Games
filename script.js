@@ -1,3 +1,5 @@
+console.log("script.js has started execution.");
+
 // Base de datos de juegos
 const games = [
 
@@ -84,7 +86,7 @@ const games = [
     },
     {
         id: 23,
-        title: "Marvel\'s Spider-Man 2",
+        title: "Marvel\\'s Spider-Man 2",
         description: "Únete a Peter Parker y Miles Morales en una nueva aventura en la ciudad de Nueva York. Domina nuevas habilidades y enfréntate a villanos icónicos.",
         category: "Mundo abierto/Pelea",
         emoji: "🕷️",
@@ -243,7 +245,7 @@ const games = [
     console.log("Games database initialized. Total games:", games.length);
     renderGames(games);
 
-    // Funci\u00F3n de b\u00DFsqueda
+    // Funci\u00F3n de b\u00DFqueda
     document.getElementById("searchInput").addEventListener("input", function() {
         const searchTerm = this.value.toLowerCase();
         const filteredGames = games.filter(game => 
@@ -253,3 +255,27 @@ const games = [
         renderGames(filteredGames);
     });
 
+
+    // Animación del título
+    const titleElement = document.querySelector(".hero-section h1");
+    const originalTitle = "X-PortGame";
+    let animatedTitle = "";
+    let index = 0;
+
+    function animateTitle() {
+        if (index < originalTitle.length) {
+            animatedTitle += originalTitle[index];
+            titleElement.textContent = animatedTitle;
+            index++;
+            setTimeout(animateTitle, 200); // Ajusta la velocidad de la animación aquí
+        } else {
+            setTimeout(() => {
+                animatedTitle = "";
+                index = 0;
+                animateTitle();
+            }, 2000); // Espera 2 segundos antes de reiniciar la animación
+        }
+    }
+
+    animateTitle();
+});
