@@ -1,1 +1,1 @@
-console.log("script.js is now executing a simplified version.");
+console.log("script.js is executing. This is a test.");
