@@ -12,4 +12,4 @@
 }
 
 // Renderizar todos los juegos al cargar la p\u00E1gina\nconsole.log('Calling renderGames with initial games array.');
-renderGames(games);\n\n// Funci\u00F3n de b\u00DFsqueda\ndocument.getElementById(\'searchInput\').addEventListener(\'input\', function() {\n    const searchTerm = this.value.toLowerCase();\n    const filteredGames = games.filter(game => \n        game.title.toLowerCase().includes(searchTerm) || \n        game.category.toLowerCase().includes(searchTerm)\n    );\n    renderGames(filteredGames);\n});\n
+renderGames(games);// Funci\u00F3n de b\u00DFsqueda\ndocument.getElementById(\'searchInput\').addEventListener(\'input\', function() {\n    const searchTerm = this.value.toLowerCase();\n    const filteredGames = games.filter(game => \n        game.title.toLowerCase().includes(searchTerm) || \n        game.category.toLowerCase().includes(searchTerm)\n    );\n    renderGames(filteredGames);\n});
