@@ -710,3 +710,18 @@ a[href*="gofile"]:hover {
     background-color: #00a;
     box-shadow: 0 0 10px #00a, 0 0 20px #00a, 0 0 40px #00a, 0 0 80px #00a;
 }
+
+/* Estilos para la sección de Cuentas de Steam Compartidas */
+#steam-accounts p.text-gray-200 {
+    color: #007bff !important; /* Azul fuerte para párrafos generales */
+}
+
+#steam-accounts p.text-gray-300,
+#steam-accounts ul.list-disc li {
+    color: #60a5fa !important; /* Azul más claro para detalles y listas */
+}
+
+#steam-accounts span.text-white,
+#steam-accounts h3.text-white {
+    color: #3b82f6 !important; /* Azul intermedio para etiquetas y títulos */
+}
