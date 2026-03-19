@@ -269,222 +269,754 @@ const games = [
     {
         id: 25,
         title: "Split Fiction",
-        description: "Un innovador juego de puzles en primera persona donde puedes manipular el tiempo y el espacio para resolver acertijos.",
+        description: "Un innovador juego de puzles en primera persona donde puedes manipular el tiempo y el espacio para resolver acertijos complejos y avanzar en una narrativa intrigante.",
         category: "puzles",
-        emoji: "🌀",
-        rating: 4.8,
-        weight: "5.0 GB",
+        emoji: "🧩",
+        rating: 4.7,
+        weight: "15.0 GB",
         image: "images/split-fiction.jpg",
         downloadUrl: "https://gofile.io/d/xJg3jP"
     },
     {
         id: 26,
         title: "Batman: Arkham Knight",
-        description: "Conviértete en Batman y enfréntate a los supervillanos de Gotham en el explosivo final de la serie Arkham. Conduce el Batmóvil y protege la ciudad.",
+        description: "Conviértete en Batman y protege Gotham City del Espantapájaros y otros villanos. Explora un vasto mundo abierto y utiliza el Batmóvil en este épico final de la saga Arkham.",
         category: "acción",
         emoji: "🦇",
-        rating: 4.8,
-        weight: "55.0 GB",
+        rating: 4.9,
+        weight: "45.0 GB",
         image: "images/batman-arkham-knight.jpg",
         downloadUrl: "https://gofile.io/d/yJg3jP"
     },
     {
         id: 27,
         title: "Resident Evil 3",
-        description: "Jill Valentine es una de las últimas personas que quedan en Raccoon City que ha sido testigo de las atrocidades de Umbrella. Para detenerla, Umbrella desata su arma secreta definitiva: ¡Nemesis!",
+        description: "Jill Valentine debe escapar de Raccoon City mientras es perseguida por la imparable arma biológica, Nemesis. Un remake del clásico de terror.",
         category: "terror",
-        emoji: "🧟",
-        rating: 4.8,
-        weight: "45.0 GB",
+        emoji: "🧟‍♀️",
+        rating: 4.7,
+        weight: "43.0 GB",
         image: "images/resident-evil-3.jpg",
         downloadUrl: "https://gofile.io/d/zJg3jP"
     },
     {
         id: 28,
         title: "It Takes Two",
-        description: "Embárcate en la aventura más alocada de tu vida en It Takes Two, un juego de plataformas que combina géneros y que ha sido creado puramente para el cooperativo.",
+        description: "Un juego de aventura cooperativo diseñado exclusivamente para dos jugadores. Embárcate en un viaje mágico y emocional para salvar una relación rota.",
         category: "aventura",
         emoji: "👫",
         rating: 4.9,
         weight: "50.0 GB",
         image: "images/it-takes-two.jpg",
-        downloadUrl: "https://gofile.io/d/kJg3jP"
+        downloadUrl: "https://gofile.io/d/aKg3jP"
     },
     {
         id: 29,
         title: "Elden Ring",
-        description: "Levántate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.",
+        description: "Un épico juego de rol de acción en un vasto mundo de fantasía oscura. Lucha contra poderosos enemigos y descubre los secretos de las Tierras Intermedias.",
         category: "rol",
-        emoji: "👑",
+        emoji: "💍",
         rating: 4.9,
         weight: "60.0 GB",
         image: "images/elden-ring.jpg",
-        downloadUrl: "https://gofile.io/d/lJg3jP"
+        downloadUrl: "https://gofile.io/d/bKg3jP"
     },
     {
         id: 30,
         title: "Hitman: The Undying",
-        description: "Vuelve a ponerte en la piel del Agente 47 y enfréntate a Mark Faba, \"El Inmortal\", en una misión de alto riesgo.",
-        category: "acción",
+        description: "Conviértete en el Agente 47 y elimina objetivos de alto perfil en este juego de sigilo y asesinato. Utiliza tu ingenio y tus habilidades para completar misiones en todo el mundo.",
+        category: "sigilo",
         emoji: "🤵",
         rating: 4.8,
-        weight: "65.0 GB",
+        weight: "70.0 GB",
         image: "images/hitman-the-undying.jpg",
-        downloadUrl: "https://gofile.io/d/mJg3jP"
+        downloadUrl: "https://gofile.io/d/cKg3jP"
     },
     {
         id: 31,
         title: "Euro Truck Simulator 2",
-        description: "Viaja por Europa como el rey de la carretera, un camionero que entrega cargas importantes a través de distancias impresionantes.",
+        description: "Experimenta la vida de un camionero en Europa. Entrega cargas, construye tu propia empresa de transporte y explora un vasto mundo abierto.",
         category: "simulación",
         emoji: "🚚",
-        rating: 4.9,
-        weight: "12.0 GB",
+        rating: 4.7,
+        weight: "5.0 GB",
         image: "images/euro-truck-simulator-2.jpg",
-        downloadUrl: "https://gofile.io/d/nJg3jP"
+        downloadUrl: "https://gofile.io/d/dKg3jP"
     },
     {
         id: 32,
         title: "Project Zomboid",
-        description: "Un sandbox de supervivencia zombi de mundo abierto. ¿Cómo morirás? Sobrevive solo o con amigos.",
+        description: "Un juego de supervivencia de zombis en un mundo abierto. Lucha por tu vida, construye refugios, busca recursos y evita ser mordido en este implacable apocalipsis.",
         category: "supervivencia",
-        emoji: "🧟",
+        emoji: "🧟‍♂️",
         rating: 4.8,
-        weight: "5.0 GB",
+        weight: "2.0 GB",
         image: "images/project-zomboid.jpg",
-        downloadUrl: "https://gofile.io/d/oJg3jP"
+        downloadUrl: "https://gofile.io/d/eKg3jP"
     },
     {
         id: 33,
-        title: "Dark Souls Remastered",
-        description: "Vuelve a Lordran en una impresionante remasterización en alta definición. Prepárate para morir.",
+        title: "Dark Souls: Remastered",
+        description: "Revive el aclamado clásico que definió el género. Explora un mundo oscuro y desafiante, lucha contra enemigos formidables y descubre la verdad detrás de Lordran.",
         category: "rol",
         emoji: "🔥",
         rating: 4.9,
-        weight: "8.0 GB",
+        weight: "20.0 GB",
         image: "images/dark-souls-remastered.jpg",
-        downloadUrl: "https://gofile.io/d/pJg3jP"
+        downloadUrl: "https://gofile.io/d/fKg3jP"
     },
     {
         id: 34,
         title: "Horizon Zero Dawn Complete Edition",
-        description: "Experimenta la legendaria misión de Aloy para desvelar los misterios de un mundo dominado por máquinas mortales.",
+        description: "En un futuro post-apocalíptico dominado por máquinas, Aloy, una hábil cazadora, debe descubrir los misterios de su pasado y el destino de la humanidad.",
         category: "rol",
         emoji: "🏹",
-        rating: 4.8,
-        weight: "100.0 GB",
+        rating: 4.9,
+        weight: "60.0 GB",
         image: "images/horizon-zero-dawn.jpg",
-        downloadUrl: "https://gofile.io/d/qJg3jP"
+        downloadUrl: "https://gofile.io/d/gKg3jP"
     },
     {
         id: 35,
         title: "The Long Dark",
-        description: "Un juego de supervivencia en primera persona que te desafía a pensar por ti mismo mientras exploras una vasta y helada naturaleza salvaje.",
+        description: "Un juego de supervivencia en primera persona ambientado en la fría y desolada naturaleza canadiense después de un desastre geomagnético. Lucha contra el frío, el hambre y la vida salvaje.",
         category: "supervivencia",
         emoji: "❄️",
         rating: 4.8,
         weight: "7.0 GB",
         image: "images/the-long-dark.jpg",
-        downloadUrl: "https://gofile.io/d/rJg3jP"
+        downloadUrl: "https://gofile.io/d/hKg3jP"
     },
     {
         id: 36,
         title: "Dark Souls II: Scholar of the First Sin",
-        description: "La edición definitiva de Dark Souls II. Incluye todo el contenido del juego hasta la fecha en un solo paquete y mucho más.",
+        description: "Adéntrate en el reino de Drangleic y enfréntate a la maldición de los no muertos. Una versión mejorada del desafiante juego de rol de acción.",
         category: "rol",
         emoji: "💀",
-        rating: 4.8,
+        rating: 4.7,
         weight: "23.0 GB",
         image: "images/dark-souls-2.jpg",
-        downloadUrl: "https://gofile.io/d/sJg3jP"
+        downloadUrl: "https://gofile.io/d/iKg3jP"
     },
     {
         id: 37,
         title: "Dave the Diver",
-        description: "Explora el misterioso Blue Hole durante el día y dirige un exótico restaurante de sushi por la noche. Una aventura de rol y gestión con un toque de humor.",
+        description: "Un juego de aventura y gestión de restaurantes donde buceas en el día para pescar y sirves sushi por la noche. Descubre los misterios del Gran Agujero Azul.",
         category: "aventura",
         emoji: "🍣",
         rating: 4.9,
         weight: "10.0 GB",
         image: "images/dave-the-diver.jpg",
-        downloadUrl: "https://gofile.io/d/tJg3jP"
+        downloadUrl: "https://gofile.io/d/jKg3jP"
+    },
+    {
+        id: 38,
+        title: "Lies of P",
+        description: "Inspirado en Pinocho, este oscuro cuento de hadas te lleva a la ciudad de Krat, donde las marionetas se han vuelto locas. Lucha contra horribles criaturas y descubre la verdad.",
+        category: "rol",
+        emoji: "⚙️",
+        rating: 4.8,
+        weight: "35.0 GB",
+        image: "images/lies-of-p.jpg",
+        downloadUrl: "https://gofile.io/d/kKg3jP"
+    },
+    {
+        id: 39,
+        title: "Brotato",
+        description: "Un roguelite de disparos de arena con vista cenital donde juegas como una patata que empuña hasta seis armas a la vez para luchar contra hordas de alienígenas.",
+        category: "roguelite",
+        emoji: "🥔",
+        rating: 4.9,
+        weight: "200 MB",
+        image: "images/brotato.jpg",
+        downloadUrl: "https://gofile.io/d/lKg3jP"
+    },
+    {
+        id: 40,
+        title: "7 Days to Die",
+        description: "Un juego de supervivencia de mundo abierto que combina elementos de shooter en primera persona, defensa de torres, rol y terror. Lucha por sobrevivir en un mundo post-apocalíptico infestado de zombis.",
+        category: "supervivencia",
+        emoji: "🧟",
+        rating: 4.7,
+        weight: "12.0 GB",
+        image: "images/7-days-to-die.jpg",
+        downloadUrl: "https://gofile.io/d/mKg3jP"
+    },
+    {
+        id: 41,
+        title: "The Witcher: Enhanced Edition",
+        description: "El inicio de la saga de Geralt de Rivia. Un juego de rol con una historia madura y un sistema de combate único.",
+        category: "rol",
+        emoji: "⚔️",
+        rating: 4.6,
+        weight: "15.0 GB",
+        image: "images/the-witcher-enhanced-edition.jpg",
+        downloadUrl: "https://gofile.io/d/nKg3jP"
+    },
+    {
+        id: 42,
+        title: "Hades",
+        description: "Un roguelike de acción donde desafías al dios de la muerte mientras te abres paso a golpes fuera del Inframundo. Desbloquea poderosas mejoras y descubre la historia de Zagreus.",
+        category: "roguelike",
+        emoji: "💀",
+        rating: 4.9,
+        weight: "15.0 GB",
+        image: "images/hades.jpg",
+        downloadUrl: "https://gofile.io/d/oKg3jP"
+    },
+    {
+        id: 43,
+        title: "Borderlands 3",
+        description: "El shooter-looter original regresa con miles de millones de armas y una aventura caótica. Ábrete paso por nuevos mundos y enemigos en este frenético juego de disparos.",
+        category: "disparos",
+        emoji: "🔫",
+        rating: 4.7,
+        weight: "75.0 GB",
+        image: "images/borderlands-3.jpg",
+        downloadUrl: "https://gofile.io/d/pKg3jP"
+    },
+    {
+        id: 44,
+        title: "Escape from Duckov",
+        description: "Un juego de disparos táctico en primera persona con elementos de rol. Escapa de la ciudad de Duckov, infestada de patos mutantes, en este desafiante juego de supervivencia.",
+        category: "disparos",
+        emoji: "🦆",
+        rating: 4.5,
+        weight: "20.0 GB",
+        image: "images/escape-from-duckov.jpg",
+        downloadUrl: "https://gofile.io/d/qKg3jP"
+    },
+    {
+        id: 45,
+        title: "A Story About Farting",
+        description: "Una aventura humorística donde el protagonista debe usar sus habilidades de flatulencia para resolver puzles y avanzar en la historia. Un juego único y divertido.",
+        category: "aventura",
+        emoji: "💨",
+        rating: 4.0,
+        weight: "500 MB",
+        image: "images/a-story-about-farting.jpg",
+        downloadUrl: "https://gofile.io/d/rKg3jP"
+    },
+    {
+        id: 46,
+        title: "Dredge",
+        description: "Un juego de pesca de terror lovecraftiano. Explora un archipiélago de islas remotas, vende tus capturas y mejora tu barco, pero ten cuidado con lo que acecha en las profundidades.",
+        category: "terror",
+        emoji: "🎣",
+        rating: 4.8,
+        weight: "2.0 GB",
+        image: "images/dredge.jpg",
+        downloadUrl: "https://gofile.io/d/sKg3jP"
+    },
+    {
+        id: 47,
+        title: "Earn to Die 2",
+        description: "Conduce tu camino a través de un apocalipsis zombi. Mejora tu vehículo y aplasta hordas de muertos vivientes en este frenético juego de carreras y supervivencia.",
+        category: "carreras",
+        emoji: "🚗",
+        rating: 4.6,
+        weight: "300 MB",
+        image: "images/earn-to-die-2.jpg",
+        downloadUrl: "https://gofile.io/d/tKg3jP"
+    },
+    {
+        id: 48,
+        title: "Grapples Galore",
+        description: "Un juego de plataformas de acción con ganchos. Balanceate, salta y lucha a través de niveles desafiantes en este emocionante juego de plataformas.",
+        category: "plataformas",
+        emoji: " grappling_hook",
+        rating: 4.5,
+        weight: "1.0 GB",
+        image: "images/grapples-galore.jpg",
+        downloadUrl: "https://gofile.io/d/uKg3jP"
+    },
+    {
+        id: 49,
+        title: "Hide and Seek",
+        description: "Un juego de terror multijugador donde un jugador es el cazador y los demás son los supervivientes. Escóndete, corre y sobrevive en este emocionante juego de terror.",
+        category: "terror",
+        emoji: "👻",
+        rating: 4.2,
+        weight: "5.0 GB",
+        image: "images/hide-and-seek.jpg",
+        downloadUrl: "https://gofile.io/d/vKg3jP"
+    },
+    {
+        id: 50,
+        title: "Kitchen Wars",
+        description: "Un frenético juego de cocina multijugador donde compites contra otros chefs para preparar los platos más deliciosos. ¡Corta, cocina y sirve en este divertido juego de cocina!",
+        category: "simulación",
+        emoji: "🍳",
+        rating: 4.0,
+        weight: "2.0 GB",
+        image: "images/kitchen-wars.jpg",
+        downloadUrl: "https://gofile.io/d/wKg3jP"
+    },
+    {
+        id: 51,
+        title: "Elden Ring Nightreign",
+        description: "Una expansión no oficial de Elden Ring con nuevos jefes, áreas y equipos. Explora un mundo aún más oscuro y desafiante en esta épica aventura de rol.",
+        category: "rol",
+        emoji: "🌑",
+        rating: 4.9,
+        weight: "70.0 GB",
+        image: "images/elden-ring-nightreign.jpg",
+        downloadUrl: "https://gofile.io/d/xKg3jP"
+    },
+    {
+        id: 52,
+        title: "Cult of the Lamb",
+        description: "Funda tu propio culto en una tierra de falsos profetas, aventurándote en regiones diversas y misteriosas para construir una leal comunidad de adoradores del bosque y difundir tu Palabra.",
+        category: "roguelike",
+        emoji: "🐑",
+        rating: 4.8,
+        weight: "1.5 GB",
+        image: "images/cult-of-the-lamb.jpg",
+        downloadUrl: "https://gofile.io/d/yKg3jP"
+    },
+    {
+        id: 53,
+        title: "Heavy Rain",
+        description: "Un thriller psicológico donde tus decisiones afectan la historia. Busca al Asesino del Origami en esta intensa aventura narrativa.",
+        category: "aventura",
+        emoji: "🌧️",
+        rating: 4.7,
+        weight: "20.0 GB",
+        image: "images/heavy-rain.jpg",
+        downloadUrl: "https://gofile.io/d/zKg3jP"
+    },
+    {
+        id: 54,
+        title: "State of Decay 2: Juggernaut Edition",
+        description: "Un juego de supervivencia de zombis en mundo abierto. Construye tu comunidad, gestiona recursos y lucha contra hordas de muertos vivientes en este desafiante juego de supervivencia.",
+        category: "supervivencia",
+        emoji: "🧟",
+        rating: 4.6,
+        weight: "25.0 GB",
+        image: "images/state-of-decay-2.jpg",
+        downloadUrl: "https://gofile.io/d/aLg3jP"
+    },
+    {
+        id: 55,
+        title: "Risk of Rain 2",
+        description: "Un roguelike de acción en tercera persona. Lucha contra hordas de monstruos, desbloquea nuevos personajes y objetos, y escapa de un planeta alienígena en este frenético juego de disparos.",
+        category: "roguelike",
+        emoji: "🌧️",
+        rating: 4.9,
+        weight: "5.0 GB",
+        image: "images/risk-of-rain-2.jpg",
+        downloadUrl: "https://gofile.io/d/bLg3jP"
+    },
+    {
+        id: 56,
+        title: "Mad Max",
+        description: "Conviértete en Mad Max y lucha por sobrevivir en un vasto mundo post-apocalíptico. Conduce vehículos personalizados, lucha contra bandas de merodeadores y busca la paz en este juego de acción y aventura.",
+        category: "acción",
+        emoji: "🚗",
+        rating: 4.7,
+        weight: "32.0 GB",
+        image: "images/mad-max.jpg",
+        downloadUrl: "https://gofile.io/d/cLg3jP"
+    },
+    {
+        id: 57,
+        title: "Nine Sols",
+        description: "Un juego de plataformas de acción en 2D con un estilo artístico único. Explora un mundo misterioso, lucha contra enemigos desafiantes y descubre los secretos de los Nueve Soles.",
+        category: "plataformas",
+        emoji: "☀️",
+        rating: 4.8,
+        weight: "10.0 GB",
+        image: "images/nine-sols.jpg",
+        downloadUrl: "https://gofile.io/d/dLg3jP"
+    },
+    {
+        id: 58,
+        title: "Metro: Last Light Complete Edition",
+        description: "Sobrevive en los túneles del metro de Moscú después de un apocalipsis nuclear. Lucha contra mutantes y facciones enemigas en este intenso shooter en primera persona.",
+        category: "disparos",
+        emoji: "🚇",
+        rating: 4.7,
+        weight: "10.0 GB",
+        image: "images/metro-last-light.jpg",
+        downloadUrl: "https://gofile.io/d/eLg3jP"
+    },
+    {
+        id: 59,
+        title: "No Rest for the Wicked",
+        description: "Un juego de rol de acción oscuro y desafiante. Lucha contra monstruos, explora un mundo gótico y descubre los secretos de la plaga que asola la tierra.",
+        category: "rol",
+        emoji: "⚔️",
+        rating: 4.9,
+        weight: "30.0 GB",
+        image: "images/no-rest-for-the-wicked.jpg",
+        downloadUrl: "https://gofile.io/d/fLg3jP"
+    },
+    {
+        id: 60,
+        title: "Thief Simulator",
+        description: "Conviértete en un ladrón profesional. Planifica tus robos, entra en casas, roba objetos de valor y escapa sin ser detectado en este juego de simulación.",
+        category: "simulación",
+        emoji: "💰",
+        rating: 4.5,
+        weight: "5.0 GB",
+        image: "images/thief-simulator.jpg",
+        downloadUrl: "https://gofile.io/d/gLg3jP"
+    },
+    {
+        id: 61,
+        title: "Prey",
+        description: "Despierta a bordo de la Talos I, una estación espacial orbitando la Luna en 2032. Eres el sujeto clave de un experimento que pretende alterar la humanidad para siempre, pero algo ha salido terriblemente mal.",
+        category: "disparos",
+        emoji: "👽",
+        rating: 4.7,
+        weight: "45.0 GB",
+        image: "images/prey.jpg",
+        downloadUrl: "https://gofile.io/d/hLg3jP"
+    },
+    {
+        id: 62,
+        title: "The Evil Within 2",
+        description: "El detective Sebastian Castellanos debe sumergirse en el mundo de STEM para salvar a su hija. Un juego de terror psicológico con una atmósfera inquietante y enemigos aterradores.",
+        category: "terror",
+        emoji: "🧠",
+        rating: 4.7,
+        weight: "40.0 GB",
+        image: "images/the-evil-within-2.jpg",
+        downloadUrl: "https://gofile.io/d/iLg3jP"
+    },
+    {
+        id: 63,
+        title: "Borderlands 2",
+        description: "Regresa a Pandora en busca de una nueva cámara llena de tesoros. Juega como uno de los cuatro nuevos buscadores de la cámara y lucha contra el tirano Handsome Jack en este frenético shooter-looter.",
+        category: "disparos",
+        emoji: "🔫",
+        rating: 4.8,
+        weight: "13.0 GB",
+        image: "images/borderlands-2.jpg",
+        downloadUrl: "https://gofile.io/d/jLg3jP"
+    },
+    {
+        id: 64,
+        title: "Half-Life 2",
+        description: "Gordon Freeman debe luchar contra la ocupación alienígena de la Tierra. Un shooter en primera persona aclamado por la crítica con una historia profunda y una jugabilidad innovadora.",
+        category: "disparos",
+        emoji: "🔫",
+        rating: 4.9,
+        weight: "7.0 GB",
+        image: "images/half-life-2.jpg",
+        downloadUrl: "https://gofile.io/d/kLg3jP"
+    },
+    {
+        id: 65,
+        title: "Grounded: Fully Yoked Edition",
+        description: "Encogido al tamaño de una hormiga, debes sobrevivir en un patio trasero gigante. Construye bases, fabrica herramientas y lucha contra insectos en este juego de supervivencia cooperativo.",
+        category: "supervivencia",
+        emoji: "🐜",
+        rating: 4.8,
+        weight: "10.0 GB",
+        image: "images/grounded.jpg",
+        downloadUrl: "https://gofile.io/d/lLg3jP"
+    },
+    {
+        id: 66,
+        title: "Supermarket Simulator Prologue",
+        description: "Experimenta la vida de un gerente de supermercado. Abastece estantes, atiende clientes y gestiona tu negocio en este divertido juego de simulación.",
+        category: "simulación",
+        emoji: "🛒",
+        rating: 4.5,
+        weight: "2.0 GB",
+        image: "images/supermarket-simulator.jpg",
+        downloadUrl: "https://gofile.io/d/mLg3jP"
+    },
+    {
+        id: 67,
+        title: "Civilization VI",
+        description: "Construye un imperio que resista el paso del tiempo. Lidera tu civilización desde la Edad de Piedra hasta la Era Espacial y domina el mundo a través de la guerra, la diplomacia o la cultura.",
+        category: "estrategia",
+        emoji: "🌍",
+        rating: 4.8,
+        weight: "12.0 GB",
+        image: "images/civilization-6.jpg",
+        downloadUrl: "https://gofile.io/d/nLg3jP"
+    },
+    {
+        id: 68,
+        title: "The Wolf Among Us",
+        description: "Un juego de aventura gráfica basado en los cómics de Fables. Juega como Bigby Wolf, el sheriff de Fabletown, y resuelve un misterio de asesinato en este oscuro cuento de hadas.",
+        category: "aventura",
+        emoji: "🐺",
+        rating: 4.9,
+        weight: "10.0 GB",
+        image: "images/the-wolf-among-us.jpg",
+        downloadUrl: "https://gofile.io/d/oLg3jP"
+    },
+    {
+        id: 69,
+        title: "Ender Lilies: Quietus of the Knights",
+        description: "Un oscuro juego de rol de acción en 2D. Explora un reino en ruinas, lucha contra enemigos corrompidos y descubre la verdad detrás de la lluvia mortal.",
+        category: "rol",
+        emoji: "🌸",
+        rating: 4.8,
+        weight: "5.0 GB",
+        image: "images/ender-lilies.jpg",
+        downloadUrl: "https://gofile.io/d/pLg3jP"
+    },
+    {
+        id: 70,
+        title: "The Survivalists",
+        description: "Un juego de supervivencia y construcción de bases en un mundo generado de forma procedural. Explora islas, fabrica herramientas, construye refugios y entrena monos para ayudarte a sobrevivir.",
+        category: "supervivencia",
+        emoji: "🐒",
+        rating: 4.6,
+        weight: "2.0 GB",
+        image: "images/the-survivalists.jpg",
+        downloadUrl: "https://gofile.io/d/qLg3jP"
+    },
+    {
+        id: 71,
+        title: "Soulmask",
+        description: "Un juego de rol de acción con elementos de supervivencia. Explora un mundo misterioso, lucha contra criaturas míticas y descubre los secretos de la máscara del alma.",
+        category: "rol",
+        emoji: "🎭",
+        rating: 4.7,
+        weight: "25.0 GB",
+        image: "images/soulmask.jpg",
+        downloadUrl: "https://gofile.io/d/rLg3jP"
+    },
+    {
+        id: 72,
+        title: "Cakey's Twisted Bakery",
+        description: "Un juego de terror psicológico en primera persona. Explora una panadería abandonada, resuelve puzles y escapa de las horribles criaturas que acechan en la oscuridad.",
+        category: "terror",
+        emoji: "🍰",
+        rating: 4.0,
+        weight: "3.0 GB",
+        image: "images/cakeys-twisted-bakery.jpg",
+        downloadUrl: "https://gofile.io/d/sLg3jP"
+    },
+    {
+        id: 73,
+        title: "Stardew Valley",
+        description: "Un juego de simulación de vida y agricultura. Crea tu propia granja, cultiva cosechas, cría animales, pesca, explora cuevas y hazte amigo de los habitantes del pueblo.",
+        category: "simulación",
+        emoji: "🚜",
+        rating: 4.9,
+        weight: "500 MB",
+        image: "images/stardew-valley.jpg",
+        downloadUrl: "https://gofile.io/d/tLg3jP"
+    },
+    {
+        id: 74,
+        title: "Bloons TD 6",
+        description: "Un juego de defensa de torres con monos. Construye torres, mejora tus defensas y explota hordas de globos en este adictivo juego de estrategia.",
+        category: "estrategia",
+        emoji: "🐒",
+        rating: 4.8,
+        weight: "1.0 GB",
+        image: "images/bloons-td-6.jpg",
+        downloadUrl: "https://gofile.io/d/uLg3jP"
+    },
+    {
+        id: 75,
+        title: "Killing Floor 2",
+        description: "Un frenético shooter cooperativo en primera persona. Lucha contra hordas de Zeds mutantes, mejora tus armas y sobrevive en este sangriento juego de acción.",
+        category: "disparos",
+        emoji: "🔫",
+        rating: 4.7,
+        weight: "60.0 GB",
+        image: "images/killing-floor-2.jpg",
+        downloadUrl: "https://gofile.io/d/vLg3jP"
+    },
+    {
+        id: 76,
+        title: "What the Pak?!",
+        description: "Un juego de plataformas de puzles con un estilo artístico único. Resuelve puzles, evita trampas y explora un mundo surrealista en este desafiante juego de plataformas.",
+        category: "plataformas",
+        emoji: "📦",
+        rating: 4.5,
+        weight: "1.0 GB",
+        image: "images/what-the-pak.jpg",
+        downloadUrl: "https://gofile.io/d/wLg3jP"
+    },
+    {
+        id: 77,
+        title: "Resident Evil: Resistance",
+        description: "Un juego multijugador asimétrico ambientado en el universo de Resident Evil. Un Mastermind intenta detener a cuatro supervivientes en una serie de experimentos mortales.",
+        category: "terror",
+        emoji: "🧟",
+        rating: 4.0,
+        weight: "20.0 GB",
+        image: "images/resident-evil-resistance.jpg",
+        downloadUrl: "https://gofile.io/d/xLg3jP"
+    },
+    {
+        id: 78,
+        title: "Field of Glory II: Medieval",
+        description: "Un juego de estrategia por turnos ambientado en la Edad Media. Lidera tus ejércitos en batallas históricas, gestiona tus recursos y conquista Europa.",
+        category: "estrategia",
+        emoji: "⚔️",
+        rating: 4.6,
+        weight: "5.0 GB",
+        image: "images/field-of-glory-2-medieval.jpg",
+        downloadUrl: "https://gofile.io/d/yLg3jP"
+    },
+    {
+        id: 79,
+        title: "Bail X Pit",
+        description: "Un juego de plataformas de acción con un estilo artístico retro. Salta, corre y lucha a través de niveles desafiantes en este emocionante juego de plataformas.",
+        category: "plataformas",
+        emoji: "🤸",
+        rating: 4.2,
+        weight: "500 MB",
+        image: "images/bail-x-pit.jpg",
+        downloadUrl: "https://gofile.io/d/zLg3jP"
+    },
+    {
+        id: 80,
+        title: "Don't Starve Together",
+        description: "Un juego de supervivencia cooperativo en un mundo oscuro y misterioso. Trabaja con tus amigos para recolectar recursos, construir refugios y sobrevivir a las extrañas criaturas que acechan en la oscuridad.",
+        category: "supervivencia",
+        emoji: "🏕️",
+        rating: 4.8,
+        weight: "2.0 GB",
+        image: "images/dont-starve-together.jpg",
+        downloadUrl: "https://gofile.io/d/aMg3jP"
+    },
+    {
+        id: 81,
+        title: "Intravenous",
+        description: "Un juego de sigilo táctico en primera persona. Infiltrate en bases enemigas, elimina objetivos y escapa sin ser detectado en este desafiante juego de sigilo.",
+        category: "sigilo",
+        emoji: "🤫",
+        rating: 4.7,
+        weight: "5.0 GB",
+        image: "images/intravenous.jpg",
+        downloadUrl: "https://gofile.io/d/bMg3jP"
+    },
+    {
+        id: 82,
+        title: "Werewolf Party",
+        description: "Un juego de deducción social multijugador donde los jugadores son aldeanos o hombres lobo. Descubre quiénes son los hombres lobo antes de que te eliminen en este divertido juego de fiesta.",
+        category: "fiesta",
+        emoji: "🐺",
+        rating: 4.0,
+        weight: "100 MB",
+        image: "images/werewolf-party.jpg",
+        downloadUrl: "https://gofile.io/d/cMg3jP"
+    },
+    {
+        id: 83,
+        title: "Megaloot: Prelude",
+        description: "Un roguelike de acción con elementos de construcción de mazos. Lucha contra enemigos, recolecta botín y mejora tu mazo en este desafiante juego de rol.",
+        category: "roguelike",
+        emoji: "🃏",
+        rating: 4.5,
+        weight: "500 MB",
+        image: "images/megaloot-prelude.jpg",
+        downloadUrl: "https://gofile.io/d/dMg3jP"
+    },
+    {
+        id: 84,
+        title: "Scheming Through the Zombie Apocalypse: The Beginning",
+        description: "Una novela visual de comedia negra ambientada en un apocalipsis zombi. Toma decisiones difíciles, gestiona tus recursos y sobrevive en este divertido y retorcido juego de supervivencia.",
+        category: "novela visual",
+        emoji: "🧟",
+        rating: 4.0,
+        weight: "1.0 GB",
+        image: "images/scheming-through-the-zombie-apocalypse.jpg",
+        downloadUrl: "https://gofile.io/d/eMg3jP"
     }
 ];
 
-// Función para renderizar los juegos
-function renderGames(gamesToRender) {
-    console.log("Attempting to render games. Games array:", gamesToRender);
-    try {
-        console.log("renderGames called with:", gamesToRender);
-        const gameGrid = document.getElementById("gameGrid");
-        if (!gameGrid) {
-            console.error("Error: #gameGrid element not found in the DOM.");
-            return;
-        }
-        gameGrid.innerHTML = ""; // Limpiar la cuadrícula antes de renderizar
-        console.log("gameGrid element:", gameGrid);
+console.log("Games array loaded:", games.length, "games.");
 
-        gamesToRender.forEach(game => {
-            const gameCard = document.createElement("div");
-            gameCard.className = "game-card";
-            gameCard.innerHTML = `
-                <div class="relative group">
-                    <img src="${game.image}" alt="${game.title}" class="w-full h-48 object-cover rounded-lg shadow-lg transition-transform duration-300 transform group-hover:scale-105">
-                </div>
-                <div class="mt-4">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-70 rounded-lg">
-                        <a href="${game.downloadUrl}" target="_blank" class="neon-button-vertical px-4 py-8 text-lg font-bold flex items-center justify-center">DESCARGAR</a>
-                    </div>
-                    <h3 class="text-xl font-bold text-white">${game.title}</h3>
-                    <p class="text-gray-400 text-sm mt-1">${game.description}</p>
-                    <div class="flex items-center justify-between mt-3 text-sm text-gray-300">
-                        <span class="font-semibold">⭐ ${game.rating}</span>
-                        <span class="font-semibold">${game.category}</span>
-                        <span class="font-semibold">${game.weight}</span>
-                    </div>
-                </div>
-            `;
-            gameGrid.appendChild(gameCard);
-            console.log("Game card appended for:", game.title);
-        });
-    } catch (error) {
-        console.error("Error rendering games:", error);
+// Función para renderizar los juegos en el catálogo
+function renderGames(gameList) {
+    console.log("renderGames called with", gameList.length, "games.");
+    const gameGrid = document.getElementById('gameGrid');
+    if (!gameGrid) {
+        console.error("Element with ID 'gameGrid' not found.");
+        return;
     }
+    gameGrid.innerHTML = ''; // Limpiar el contenido existente
+
+    gameList.forEach(game => {
+        const gameCard = `
+            <div class="game-card bg-gray-800 rounded-lg shadow-lg overflow-hidden relative group">
+                <div class="game-card-image w-full h-48 bg-cover bg-center" style="background-image: url('${game.image}');">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="${game.downloadUrl}" target="_blank" class="neon-button-vertical text-white text-lg font-bold py-3 px-6 rounded-lg text-center">
+                            Descargar
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2 text-white">${game.title} ${game.emoji}</h3>
+                    <p class="text-gray-400 text-sm mb-2">${game.description}</p>
+                    <div class="flex justify-between items-center text-gray-500 text-xs">
+                        <span>⭐ ${game.rating}</span>
+                        <span>${game.category}</span>
+                        <span>${game.weight}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        gameGrid.innerHTML += gameCard;
+    });
+    console.log("Games rendered.");
 }
 
-// Renderizar todos los juegos al cargar la página
-console.log("Games database initialized. Total games:", games.length);
-renderGames(games);
-
-// Función de búsqueda
-document.getElementById("searchInput").addEventListener("input", function() {
-    const searchTerm = this.value.toLowerCase();
+// Función para filtrar juegos
+function filterGames() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const filteredGames = games.filter(game => 
-        game.title.toLowerCase().includes(searchTerm) || 
-        game.category.toLowerCase().includes(searchTerm)
+        game.title.toLowerCase().includes(searchInput) ||
+        game.description.toLowerCase().includes(searchInput) ||
+        game.category.toLowerCase().includes(searchInput)
     );
     renderGames(filteredGames);
-});
-
-// Animación del título
-const titleElement = document.querySelector(".hero-section h1");
-const originalTitle = "X-PortGame";
-let animatedTitle = "";
-let index = 0;
-
-function animateTitle() {
-    if (index < originalTitle.length) {
-        animatedTitle += originalTitle[index];
-        titleElement.textContent = animatedTitle;
-        index++;
-        setTimeout(animateTitle, 200); // Ajusta la velocidad de la animación aquí
-    } else {
-        setTimeout(() => {
-            animatedTitle = "";
-            index = 0;
-            animateTitle();
-        }, 2000); // Espera 2 segundos antes de reiniciar la animación
-    }
 }
 
-animateTitle();
+// Inicializar el catálogo de juegos al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOMContentLoaded fired.");
+    renderGames(games);
+
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('keyup', filterGames);
+    }
+});
+
+// Estilos para el botón de descarga vertical (añadido directamente en JS para prueba, se moverá a CSS)
+const style = document.createElement('style');
+style.innerHTML = `
+.neon-button-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Ancho delgado */
+    height: 180px; /* Altura grande */
+    border: 2px solid #00d4ff; /* Borde neón azul */
+    box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2);
+    background: linear-gradient(180deg, #0066cc 0%, #0099ff 100%); /* Gradiente vertical */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: absolute; /* Posicionamiento absoluto para centrar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0; /* Inicialmente oculto */
+}
+
+.game-card:hover .neon-button-vertical {
+    opacity: 1; /* Visible al pasar el ratón */
+}
+`;
+document.head.appendChild(style);
