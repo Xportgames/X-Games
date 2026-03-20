@@ -37,6 +37,18 @@ const games = [
         image: "images/red-dead-redemption-2.jpg",
         downloadUrl: "https://tunnel1.dlproxy.uk/download/XAJeWO15O4C19Ai3Jvuqitqg5l1_CCncB25Eaa4Z71JAAM2ppGVMblIY3AWDW8k1fY0JuJ6RuqfNreqTDOqV3ZNpqRZ8J8r9qy-NDNYXkXN48_c9sUlXH0zDWwpD9s5TiOuBLvSfqaMWzdFJtGvNfwLmeZPL0ZdINewAwJKbsYysAmMLQVccDEyq65RfT-NjauxCflhKXoUP5r7AFoEIwiKMQ_eLKmJConWUvccYiOlXiH0SHoes0p0Z9qDdjESQDw0fQenKisl-vFx-wgK1oE5jFgFsP0oEQkRoVlKbLjx4fyHoBqj5y4rXESFf-ky__JsisoV_ey3C3L2ECdcKe3N0ABIgzussngaGKUBwD8WXC7bZzbJVnHki9a9USi1la8axauJfvDy9bQx95DrFNL3PoQcr2YokNtdjIgAn2Ruz7MLnePy-M5G_NQfE6ZcwzoHYeYHw24RnRIyaBNdHKlGSpou8is2aISZN1yH4kUrcwaHQM12kb6mug14hIcCOuGBu0_p4W-ob8JXdKdo2A3HuzCB7vgPqfYGsz9eaKH4lWAP2PVcUXPH1mCrtdILWHRVsmUyoXjAqjtYqDZPRER_wyn58sEE8pwKqc3elubeq6r_Vrl04-SOGhT_JsGJU"
     }
+    },
+    {
+        id: 4,
+        title: "God of War",
+        description: "Kratos y Atreus se embarcan en un viaje épico a través de los Nueve Reinos en busca de respuestas antes de que llegue el Ragnarök.",
+        category: "Aventura",
+        emoji: "⚔️",
+        rating: 4.9,
+        weight: "36.5 GB",
+        image: "images/god-of-war.jpg",
+        downloadUrl: "https://orion.dlproxy.uk/download/22caYocy6wa4RiBmhjEtCpl4vToiqPaJibJFkhtXF0DYfbItQdnx5fRsQtFUKtANaOtgZhcHR55-1M6KOh6OIqZRgkM4k9TOZEBWwuQ-YrE5n_Iar3lkGIGHCsJXnrb2AH9asuLMI4GGNDOmtfkQhkD9OKv-qfe4BJuU6fUa-8w47PS7y8jz7hKHc-iRn0CkuItzeTDJCEKEyo-E9upw77g0ov1LxXil26_VqVxoDHOq7_G50A7I-JmlswwBJ7waQ_685QgYzk87SYe8vLboreWNFbDgE950KEIoivrIQThS0NLwRQ0_X_WdZBoYN1t3vz0SGWQ5Cl9bBcfLV_QW1L-orl2rUPDO4Ny2FpALi-AIux48LgpgRbizkbVDNQc4EAw33s6jRoys8oewrQUxN2Ue_FKehuYTqVtbph-DhiY0YU22iHNLe_eXKneI_c3sN3EzzUFkzi5vg82Zy3pW2cTsDipvYGztB6DiX6tBhoHsZsJ_O_dvlQCfXGxJ8wuAQwtHxlpLH6xDvN9zAz89PNQWJj1FIYdm6VbZLSizhw2fWGZ5BdwSvEtrAQMRt2iOLN2YwNzAqrBRecdCnTFHafVAOyATVlbjbcrRf53EcwQ"
+    }
 ];
 
 console.log("Games array loaded:", games.length, "games.");
