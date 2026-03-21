@@ -120,35 +120,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Estilos para el botón de descarga vertical (añadido directamente en JS para prueba, se moverá a CSS)
-const style = document.createElement("style");
-style.innerHTML = `
-.neon-button-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 120px; /* Ancho delgado */
-    height: 180px; /* Altura grande */
-    border: 2px solid #00d4ff; /* Borde neón azul */
-    box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2);
-    background: linear-gradient(180deg, #0066cc 0%, #0099ff 100%); /* Gradiente vertical */
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    position: absolute; /* Posicionamiento absoluto para centrar */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    opacity: 0; /* Inicialmente oculto */
-}
 
-.game-card:hover .neon-button-vertical {
-    opacity: 1; /* Visible al pasar el ratón */
-}
-`;
-document.head.appendChild(style);

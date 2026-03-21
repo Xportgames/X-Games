@@ -71,6 +71,7 @@ body {
     width: 100%;
     max-width: 100%;
     margin: 0 auto 0;
+    min-height: 300px; /* Asegurar una altura mínima para la tarjeta */
     overflow: visible;
 }
 
@@ -84,7 +85,7 @@ body {
 /* MINIATURA YOUTUBE COMPLETA 16:9 - ANCHO COMPLETO */
 .game-card-image {
     width: 100%;
-    height: auto;
+    height: 200px; /* Altura fija para la imagen */
     aspect-ratio: 16/9;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
@@ -499,6 +500,34 @@ a[href*="gofile"]:hover {
     box-shadow: 0 0 30px #00d4ff, 0 0 50px #0099ff, inset 0 0 20px rgba(0, 212, 255, 0.3);
 }
 
+.neon-button-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Ancho delgado */
+    height: 180px; /* Altura grande */
+    border: 2px solid #00d4ff; /* Borde neón azul */
+    box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2);
+    background: linear-gradient(180deg, #0066cc 0%, #0099ff 100%); /* Gradiente vertical */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: absolute; /* Posicionamiento absoluto para centrar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0; /* Inicialmente oculto */
+}
+
+.game-card:hover .neon-button-vertical {
+    opacity: 1; /* Visible al pasar el ratón */
+}
+
 /* Responsive para móvil */
 @media (max-width: 768px) {
     .steamrip-section h3 {
@@ -732,4 +761,32 @@ a[href*="gofile"]:hover {
 #steam-accounts span,
 #steam-accounts h3 {
     color: #007bff !important; /* Azul fuerte para todo el texto en la sección de cuentas de Steam */
+}
+
+.neon-button-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Ancho delgado */
+    height: 180px; /* Altura grande */
+    border: 2px solid #00d4ff; /* Borde neón azul */
+    box-shadow: 0 0 10px #00d4ff, inset 0 0 10px rgba(0, 212, 255, 0.2);
+    background: linear-gradient(180deg, #0066cc 0%, #0099ff 100%); /* Gradiente vertical */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: absolute; /* Posicionamiento absoluto para centrar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 1; /* Temporalmente visible para depuración */
+}
+
+.game-card:hover .neon-button-vertical {
+    opacity: 1; /* Visible al pasar el ratón */
 }
