@@ -12,7 +12,6 @@ const games = [
         weight: "166.0 GB",
         image: "images/forza-horizon-5.jpg",
         downloadUrl: "https://tunnel1.dlproxy.uk/download/WrTLulKik3KpjnMuO-0gDohCI1WaybS779E_l6yr1UHGRMFfTkE7B5t5Ys5_N2qu8u6HmpGsrEZKftnkvhgxcvRqn6Pp9kceoiJRSTvPjlW9McV7BJ-xx3usIrf-VTZ9_T7vyRXCDX0mGp_LGc9Nd5PD0vaeFIUe-G5Bhmkay8fEuecVna8DGkS2gcGHKviC1kE5C8XbdTPYaT4GZQSZuUbxfxxm9VXU7628y-HoLWXhBzw8qzwr82cwiw-qpLJ4GZQ_RZZw4eooDEpuj2-nNvweAQybUFOXn7sJx0AAEarg0EX9KbRLTKlQr2hfDfKf_LfVj1cpmEK61hZWnaTrDZB2_oTs7mqO01rlctu50if6Gjj5OP3kKHIGzbJJ0gIDQpyNqBGjb7N2LVhgtYx1sjvDDb7R7WsMiOC7bxM-sx50pz1xhFamAw0d0J5V4PYeqODIoQGHDaijl5SgEz3KhRKaWIEEn2MXCOH9EHpcsqyc0wQP5umXyUTIZ9Fs0VMLGAxMsKAa-XrueRFygouO8rWIeBxh4i_E6idMzl7S4Fq_igP6dSHg91eMEiQ06clE_dSFMIY6HoRTFgZViiIo08noo_iXXugtxzzRLA7SvPflDcYzikDYIZRr-cDw8xyc"
-    }
     },
     {
         id: 2,
@@ -23,8 +22,7 @@ const games = [
         rating: 4.9,
         weight: "117.1 GB",
         image: "images/gta-v.jpg",
-        downloadUrl: "https://tunnel1.dlproxy.uk/download/XAJeWO15O4C19Ai3Jvuqitqg5l1_CCncB25Eaa4Z71JAAM2ppGVMblIY3AWDW8k1fY0JuJ6RuqfNreqTDOqV3ZNpqRZ8J8r9qy-NDNYXkXN9_Rr8S9PgywXbtsE4bjoPzO4TiRoCcYrgouBm-EJqtBSiuPQS94EbAoj-N8Q3KvFXq76S-LEYakmKNBoljh6NR3Lc0-hkX_9MNh5lUr1ITUggstA6bZEtIxRo_Kv9RLmmXfs3T98o9V_v4NT8Ab2ou0JQnMjRkE2s-KqGzKQM7b9Q8lJbvyCj_GgjJsImnRbVyPYSY7I1vM1VRyJuraIkBalhyuVYmjIy99Sifxah5nW8rZQai0uzvrZTpxOETso8jxPSUvTB8l4KoWYaYoGEYHSr5KZpEoe57fL8AQ3ma9bQGEdNPj7iY0WLK5iQsR7oe3-o-vsxVTqHXkwbGVp-MZvuDiZyGPelOEnYoWJ2fe5yfJsxbmdIz6ec9KXSnXVgIMVOMAFjCeWI0d3N4J0IR07s--eir2cZ15inCogQMdS2FSEfL-HkpLeUjGBLeFy6Ha4NXxEKrUoZ4_vsQAZ-VvS3AsbKBRRxSDXsprJZw3N8Ms589Jhr6nmStOERT_lnSZbPP5FSR1NlTMVl6Db9"
-    }
+        downloadUrl: "https://tunnel1.dlproxy.uk/download/XAJeWO15O4C19Ai3Jvuqitqg5l1_CCncB25Eaa4Z71JAAM2ppGVMblIY3AWDW8k1fY0JuJ6RuqfNreqTDOqV3ZNpqRZ8J8r9qy-NDNYXkXN9_Rr8S9PgywXbtsE4bjoPzO4TiRoCcYrgouBm-EJqtBSiuPQS94EbAoj-N8Q3KvFXq76S-LEYakmKNBoljh6NR3Lc0-hkX_9MNh5lUr1ITUggstA6bZEtIxRo_Kv9RLmmXfs3T98o9V_v4NT8Ab2ou0JQnMjRkE2s-KqGzKQM7b9Q8lJbvyCj_GgjJsImnRbVyPYSY7I1vM1VRyJuraIkBalhyuVYmjIy99Sifxah5nW8rZQai0uzvrZTpxOETso8jxPSUvTB8l4KoWYaYoGEYHSr5KZpEoe57fL8AQ3ma9bQGEdNPj7iY0WLK5iQsR7oe3-o-vsxVTqHXkwbGVp-MZvuDiZyGPelOEnYoWJ2fe5yfJsxbmdIz6ec9KXSnXVgIMVOMAFjCeWI0d3N4J0IR07s--eir2cZ15inCogQMdS2FSEfL-HkpLeUjGBLeFy6Ha4NXxEKrUoZ4_vsQAZ-VvS3AsbKBRRxSDXsprJZw3N8Ms589Jhr6nmStOERT_lnSZbPP5FSRNlTMVl6Db9"
     },
     {
         id: 3,
@@ -36,7 +34,6 @@ const games = [
         weight: "113.0 GB",
         image: "images/red-dead-redemption-2.jpg",
         downloadUrl: "https://tunnel1.dlproxy.uk/download/XAJeWO15O4C19Ai3Jvuqitqg5l1_CCncB25Eaa4Z71JAAM2ppGVMblIY3AWDW8k1fY0JuJ6RuqfNreqTDOqV3ZNpqRZ8J8r9qy-NDNYXkXN48_c9sUlXH0zDWwpD9s5TiOuBLvSfqaMWzdFJtGvNfwLmeZPL0ZdINewAwJKbsYysAmMLQVccDEyq65RfT-NjauxCflhKXoUP5r7AFoEIwiKMQ_eLKmJConWUvccYiOlXiH0SHoes0p0Z9qDdjESQDw0fQenKisl-vFx-wgK1oE5jFgFsP0oEQkRoVlKbLjx4fyHoBqj5y4rXESFf-ky__JsisoV_ey3C3L2ECdcKe3N0ABIgzussngaGKUBwD8WXC7bZzbJVnHki9a9USi1la8axauJfvDy9bQx95DrFNL3PoQcr2YokNtdjIgAn2Ruz7MLnePy-M5G_NQfE6ZcwzoHYeYHw24RnRIyaBNdHKlGSpou8is2aISZN1yH4kUrcwaHQM12kb6mug14hIcCOuGBu0_p4W-ob8JXdKdo2A3HuzCB7vgPqfYGsz9eaKH4lWAP2PVcUXPH1mCrtdILWHRVsmUyoXjAqjtYqDZPRER_wyn58sEE8pwKqc3elubeq6r_Vrl04-SOGhT_JsGJU"
-    }
     },
     {
         id: 4,
@@ -68,17 +65,17 @@ console.log("Games array loaded:", games.length, "games.");
 // Función para renderizar los juegos en el catálogo
 function renderGames(gameList) {
     console.log("renderGames called with", gameList.length, "games.");
-    const gameGrid = document.getElementById(\'gameGrid\');
+    const gameGrid = document.getElementById('gameGrid');
     if (!gameGrid) {
-        console.error("Element with ID \'gameGrid\' not found.");
+        console.error("Element with ID 'gameGrid' not found.");
         return;
     }
-    gameGrid.innerHTML = \'\'; // Limpiar el contenido existente
+    gameGrid.innerHTML = ''; // Limpiar el contenido existente
 
     gameList.forEach(game => {
         const gameCard = `
             <div class="game-card bg-gray-800 rounded-lg shadow-lg overflow-hidden relative group">
-                <div class="game-card-image w-full h-48 bg-cover bg-center" style="background-image: url(\'${game.image}\');">
+                <div class="game-card-image w-full h-48 bg-cover bg-center" style="background-image: url('${game.image}');">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <a href="${game.downloadUrl}" target="_blank" class="neon-button-vertical text-white text-lg font-bold py-3 px-6 rounded-lg text-center">
                             Descargar
@@ -104,7 +101,7 @@ function renderGames(gameList) {
 
 // Función para filtrar juegos
 function filterGames() {
-    const searchInput = document.getElementById(\'searchInput\').value.toLowerCase();
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const filteredGames = games.filter(game => 
         game.title.toLowerCase().includes(searchInput) ||
         game.description.toLowerCase().includes(searchInput) ||
@@ -114,18 +111,18 @@ function filterGames() {
 }
 
 // Inicializar el catálogo de juegos al cargar la página
-document.addEventListener(\'DOMContentLoaded\', () => {
+document.addEventListener('DOMContentLoaded', () => {
     console.log("DOMContentLoaded fired.");
     renderGames(games);
 
-    const searchInput = document.getElementById(\'searchInput\');
+    const searchInput = document.getElementById('searchInput');
     if (searchInput) {
-        searchInput.addEventListener(\'keyup\', filterGames);
+        searchInput.addEventListener('keyup', filterGames);
     }
 });
 
 // Estilos para el botón de descarga vertical (añadido directamente en JS para prueba, se moverá a CSS)
-const style = document.createElement(\'style\');
+const style = document.createElement('style');
 style.innerHTML = `
 .neon-button-vertical {
     display: flex;
