@@ -49,6 +49,18 @@ const games = [
         image: "images/god-of-war.jpg",
         downloadUrl: "https://orion.dlproxy.uk/download/22caYocy6wa4RiBmhjEtCpl4vToiqPaJibJFkhtXF0DYfbItQdnx5fRsQtFUKtANaOtgZhcHR55-1M6KOh6OIqZRgkM4k9TOZEBWwuQ-YrE5n_Iar3lkGIGHCsJXnrb2AH9asuLMI4GGNDOmtfkQhkD9OKv-qfe4BJuU6fUa-8w47PS7y8jz7hKHc-iRn0CkuItzeTDJCEKEyo-E9upw77g0ov1LxXil26_VqVxoDHOq7_G50A7I-JmlswwBJ7waQ_685QgYzk87SYe8vLboreWNFbDgE950KEIoivrIQThS0NLwRQ0_X_WdZBoYN1t3vz0SGWQ5Cl9bBcfLV_QW1L-orl2rUPDO4Ny2FpALi-AIux48LgpgRbizkbVDNQc4EAw33s6jRoys8oewrQUxN2Ue_FKehuYTqVtbph-DhiY0YU22iHNLe_eXKneI_c3sN3EzzUFkzi5vg82Zy3pW2cTsDipvYGztB6DiX6tBhoHsZsJ_O_dvlQCfXGxJ8wuAQwtHxlpLH6xDvN9zAz89PNQWJj1FIYdm6VbZLSizhw2fWGZ5BdwSvEtrAQMRt2iOLN2YwNzAqrBRecdCnTFHafVAOyATVlbjbcrRf53EcwQ"
     }
+    },
+    {
+        id: 5,
+        title: "Spider-Man 2",
+        description: "Continúa la historia de Peter Parker y Miles Morales mientras luchan contra nuevos villanos en la ciudad de Nueva York.",
+        category: "Mundo abierto",
+        emoji: "🕷️",
+        rating: 4.9,
+        weight: "110 GB",
+        image: "images/spider-man-2.jpg",
+        downloadUrl: "https://tunnel1.dlproxy.uk/download/WrTLulKik3KpjnMuO-0gDohCI1WaybS779E_l6yr1UHGRMFfTkE7B5t5Ys5_N2qu8u6HmpGsrEZKftnkvhgxcvRqn6Pp9kceoiJRSTvPjlV-H5vgZ6tTVCuLGrjLNb3QjeK-xBykNya-Nf_7B0sB2yyaUMjVQSluuvw8Je8q85c_6zpsJGW1KqIBFO-CXRgoOZ7i7X4SlbyeuUN7Qn8xNnKjHDYheGaY1Eu_BndniLvvMD4X142sM0zpozUXx8qfbGUOD1cd4eJwVXtSQG0pjJHlzhaOFqk1ztMutTKIJQ7HK8mJLIJkjurlNzNL-kshU0yU2wLTNWrFdXE4a1nEfoejxXwi3IDpjzQP3haSPHs-9iXnHmLytSXmpPbRDqIZ4PtUx8YfbN8sM4N1wiMBQBdHpFYCKyYL8_MuXUNhYBizImKJtC1sf2nVCXSwl-NqyFh7a-r1W9g_1qJt4x4U0TAWbBiraY7fdJAWU0PRtFKnt2R_wD4JJB7he3GZOEUmTLogln-IiT-xWpMMCCJ9y_An-yj6tdJtol053SIxbPMbpVntopoqDTLk_UwfiiRNWI4DHxujIIIuwStbWy-RoMcRo0wYXO25nZeWn8MzpEJkvFWo2WO0btRX5lwHtGtX"
+    }
 ];
 
 console.log("Games array loaded:", games.length, "games.");
