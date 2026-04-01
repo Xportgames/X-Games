@@ -73,6 +73,8 @@ body {
     max-width: 100%;
     margin: 0 auto 0;
     min-height: 300px; /* Asegurar una altura mínima para la tarjeta */
+    height: 300px; /* Altura fija para depuración */
+    width: 100%; /* Ancho fijo para depuración */
     overflow: hidden;
 }
 
