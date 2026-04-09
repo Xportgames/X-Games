@@ -74,11 +74,15 @@ function renderGames(gameList) {
     gameList.forEach(game => {
         const gameCard = `
             <div class="game-card bg-gray-800 rounded-lg shadow-lg overflow-hidden relative group">
-                <div class="game-card-image w-full h-48 bg-cover bg-center" style="background-image: url(\"${game.image}\");">
+                <div class="game-card-image w-full h-48 bg-cover bg-center">
+                    <img src="${game.image}" alt="${game.title}" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <a href="${game.downloadUrl}" target="_blank" class="neon-button-vertical text-white text-lg font-bold py-3 px-6 rounded-lg text-center">
                             Descargar
                         </a>
+                    </div>
+                </div>
+                <div class="p-4">
                     </div>
                 </div>
                 <div class="p-4">

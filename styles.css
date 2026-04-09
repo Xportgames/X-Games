@@ -63,7 +63,7 @@ body {
     border-radius: 0;
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-    background-color: blue; /* Fondo temporal para depuración */
+
     border: none;
     border-bottom: 1px solid rgba(0, 212, 255, 0.15);
 
